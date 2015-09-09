@@ -1,0 +1,3 @@
+.main-container {
+  @include center(1024px, $pad: 15px);
+}
