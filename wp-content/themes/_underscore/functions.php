@@ -10,7 +10,6 @@
 
 // Load any external files you have here
 
-
 if (function_exists('add_theme_support'))
 {
     // Add Menu Support
@@ -59,23 +58,29 @@ function underscore_nav()
 	);
 }
 
-// Load HTML5 Blank scripts (header.php)
+// Load scripts (header.php)
 function underscore_header_scripts()
 {
     if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
 
-    	wp_register_script('conditionizr', get_template_directory_uri() . '/js/lib/conditionizr-4.3.0.min.js', array(), '4.3.0'); // Conditionizr
+    	  wp_register_script('conditionizr', get_template_directory_uri() . '/assets/javascript/vendor/conditionizr-4.3.0.min.js', array(), '4.3.0'); // Conditionizr
         wp_enqueue_script('conditionizr'); // Enqueue it!
 
-        wp_register_script('modernizr', get_template_directory_uri() . '/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1'); // Modernizr
+        wp_register_script('modernizr', get_template_directory_uri() . '/assets/javascript/vendor/modernizr-2.8.3.min.js', array(), '2.8.3'); // Modernizr
         wp_enqueue_script('modernizr'); // Enqueue it!
+        
+        wp_register_script('jquery', get_template_directory_uri() . '/assets/javascript/vendor/jquery-1.11.2.min.js', array(), '1.11.2'); // JQuery
+        wp_enqueue_script('jquery'); // Enqueue it!
 
-        wp_register_script('underscorescripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
+        wp_register_script('lettering', get_template_directory_uri() . '/assets/javascript/vendor/jquery.lettering.js', array(), '0.7.0'); // Lettering
+        wp_enqueue_script('lettering'); // Enqueue it!
+        
+        wp_register_script('underscorescripts', get_template_directory_uri() . '/assets/javascript/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('underscorescripts'); // Enqueue it!
     }
 }
 
-// Load HTML5 Blank conditional scripts
+// Load conditional scripts
 function underscore_conditional_scripts()
 {
     if (is_page('pagenamehere')) {

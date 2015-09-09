@@ -4,7 +4,7 @@
 		
 		'use strict';
 		
-		// DOM ready, take it away
+    $(".nav-story, .nav-shop, .nav-contact").lettering();
 		
 	});
 	

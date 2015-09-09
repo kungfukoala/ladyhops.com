@@ -1,0 +1,16 @@
+// Background Assets
+$nav-background-left: "navigation-left.png";
+$nav-background-right: "navigation-right.png";
+// Background Code
+%nav-left-background { 
+  background:url(#{$img-assetpath}#{$nav-background-left}) no-repeat;
+  @include min-screen(nth($res-collection, 3)*1px) {
+    background:url(#{$img-assetpath}#{$nav-background-left}) no-repeat;
+  }
+}
+%nav-right-background { 
+  background:url(#{$img-assetpath}#{$nav-background-right}) no-repeat;
+  @include min-screen(nth($res-collection, 3)*1px) {
+    background:url(#{$img-assetpath}#{$nav-background-right}) no-repeat;
+  }
+}

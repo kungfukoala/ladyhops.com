@@ -1,3 +1,6 @@
 .main-container {
-  @include center(1024px, $pad: 15px);
+  @include center(960px, $pad: 15px);
+}
+.container {
+  @include cf();
 }

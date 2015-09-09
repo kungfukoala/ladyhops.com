@@ -1,6 +1,7 @@
 .header {
-  margin:0;
-  .logo {
+  @include center(820px);
+  .header-logo {
+    float:left;
   }
   .utility-navigation {
     @include horizontal-navigation($margin: 5px);
@@ -13,4 +14,32 @@
       text-decoration:none;
     }
   }
+}
+%navigation {
+  height:145px;
+  float:left;
+}
+.header-story {
+  @extend %navigation;
+  width:150px;
+  @extend %nav-left-background;
+  background-position:0 -34px;
+}
+.header-shop {
+  @extend %navigation;
+  width:120px;
+  @extend %nav-left-background;
+  background-position:-150px -34px;
+}
+.header-contact {
+  @extend %navigation;
+  width:114px;
+  @extend %nav-left-background;
+  background-position:-270px -34px;
+}
+.header-cart {
+  @extend %navigation;
+  width:280px;
+  @extend %nav-right-background;
+  background-position:-8px -9px;
 }
