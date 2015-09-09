@@ -12,6 +12,11 @@ wp-settings.php
 wp-signup.php
 wp-trackback.php
 xmlrpc.php
+wp-links-opml.php
+wp-comments-post.php
+wp-blog-header.php
+license.txt
+readme.html
 config.codekit
 wp-content/advanced-cache.php
 wp-content/backup-db/
