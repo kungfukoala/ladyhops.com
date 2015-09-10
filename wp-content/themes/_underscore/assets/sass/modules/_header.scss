@@ -1,7 +1,8 @@
 .header {
   @include center(820px);
-  .header-logo {
-    float:left;
+  margin-bottom:$spacing-large;
+  a {
+    text-decoration:none;
   }
   .utility-navigation {
     @include horizontal-navigation($margin: 5px);
@@ -16,7 +17,15 @@
   }
 }
 %navigation {
+  position:relative;
   height:145px;
+  float:left;
+}
+%navigation-letters {
+  font-weight:700;
+  position:absolute;
+}
+.header-logo {
   float:left;
 }
 .header-story {
@@ -24,22 +33,139 @@
   width:150px;
   @extend %nav-left-background;
   background-position:0 -34px;
+  .nav-story {
+    .char1 { 
+      @extend %navigation-letters;
+      top:43px;
+      left:55px;
+      font-size:2em;
+    }
+    .char2 {
+      @extend %navigation-letters;
+      top:43px;
+      left:70px;
+      font-size:2em;
+    }
+    .char3 { 
+      @extend %navigation-letters;
+      top:43px;
+      left:80px;
+      font-size:2em;
+    }
+    .char4 { 
+      @extend %navigation-letters;
+      top:43px;
+      left:95px;
+      font-size:2em;
+    }
+    .char5 {
+      @extend %navigation-letters;
+      top:43px;
+      left:105px;
+      font-size:2em;
+    }
+  }
 }
 .header-shop {
   @extend %navigation;
   width:120px;
   @extend %nav-left-background;
   background-position:-150px -34px;
+  .nav-shop {
+    .char1 { 
+      @extend %navigation-letters;
+      top:5px;
+      left:0px;
+      font-size:5.5em;
+    }
+    .char2 {
+      @extend %navigation-letters;
+      top:30px;
+      left:40px;
+      font-size:3em;
+    }
+    .char3 { 
+      @extend %navigation-letters;
+      top:25px;
+      left:60px;
+      font-size:4em;
+    }
+    .char4 { 
+      @extend %navigation-letters;
+      top:15px;
+      left:85px;
+      font-size:4em;
+    }
+  }
 }
 .header-contact {
   @extend %navigation;
   width:114px;
   @extend %nav-left-background;
   background-position:-270px -34px;
+  .nav-contact {
+    .char1 { 
+      @extend %navigation-letters;
+      top:5px;
+      left:0px;
+      font-size:5.5em;
+    }
+    .char2 {
+      @extend %navigation-letters;
+      top:30px;
+      left:40px;
+      font-size:3em;
+    }
+    .char3 { 
+      @extend %navigation-letters;
+      top:25px;
+      left:60px;
+      font-size:4em;
+    }
+    .char4 { 
+      @extend %navigation-letters;
+      top:15px;
+      left:85px;
+      font-size:4em;
+    }
+    .char5 { 
+      @extend %navigation-letters;
+      top:15px;
+      left:85px;
+      font-size:4em;
+    }
+    .char6 { 
+      @extend %navigation-letters;
+      top:15px;
+      left:85px;
+      font-size:4em;
+    }
+    .char7 { 
+      @extend %navigation-letters;
+      top:15px;
+      left:85px;
+      font-size:4em;
+    }
+  }
 }
 .header-cart {
   @extend %navigation;
   width:280px;
   @extend %nav-right-background;
   background-position:-8px -9px;
+  .nav-account {
+    position:absolute;
+    top:70px;
+    right:115px;
+  }
+  .nav-bag {
+    position:absolute;
+    top:88px;
+    right:75px;
+  }
+}
+.header-social {
+  float:right;
+  padding-top:5px;
+  padding-right:30px;
 }

@@ -1,5 +1,5 @@
 .main-container {
-  @include center(960px, $pad: 15px);
+  @include center(820px, $pad: 15px);
 }
 .container {
   @include cf();
