@@ -443,45 +443,45 @@ small {
   width: 150px;
   background-position: 0 -34px; }
   .header-story .nav-story .char1 {
-    top: 43px;
-    left: 55px;
-    font-size: 2em; }
+    top: 30px;
+    left: 35px;
+    font-size: 55px; }
   .header-story .nav-story .char2 {
-    top: 43px;
-    left: 70px;
-    font-size: 2em; }
+    top: 35px;
+    left: 56px;
+    font-size: 40px; }
   .header-story .nav-story .char3 {
-    top: 43px;
-    left: 80px;
-    font-size: 2em; }
+    top: 25px;
+    left: 68px;
+    font-size: 52px; }
   .header-story .nav-story .char4 {
-    top: 43px;
-    left: 95px;
-    font-size: 2em; }
+    top: 35px;
+    left: 93px;
+    font-size: 40px; }
   .header-story .nav-story .char5 {
-    top: 43px;
-    left: 105px;
-    font-size: 2em; }
+    top: 35px;
+    left: 106px;
+    font-size: 45px; }
 
 .header-shop {
   width: 120px;
   background-position: -150px -34px; }
   .header-shop .nav-shop .char1 {
-    top: 5px;
-    left: 0px;
-    font-size: 5.5em; }
-  .header-shop .nav-shop .char2 {
-    top: 30px;
-    left: 40px;
-    font-size: 3em; }
-  .header-shop .nav-shop .char3 {
     top: 25px;
+    left: 0px;
+    font-size: 75px; }
+  .header-shop .nav-shop .char2 {
+    top: 37px;
+    left: 35px;
+    font-size: 50px; }
+  .header-shop .nav-shop .char3 {
+    top: 30px;
     left: 60px;
-    font-size: 4em; }
+    font-size: 50px; }
   .header-shop .nav-shop .char4 {
-    top: 15px;
+    top: 25px;
     left: 85px;
-    font-size: 4em; }
+    font-size: 50px; }
 
 .header-contact {
   width: 114px;
