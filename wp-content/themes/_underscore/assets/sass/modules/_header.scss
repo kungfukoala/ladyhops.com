@@ -107,45 +107,45 @@
   .nav-contact {
     .char1 { 
       @extend %navigation-letters;
-      top:5px;
+      top:0px;
       left:0px;
-      font-size:5.5em;
+      font-size:80px;
     }
     .char2 {
       @extend %navigation-letters;
-      top:30px;
-      left:40px;
-      font-size:3em;
+      top:18px;
+      left:35px;
+      font-size:45px;
     }
     .char3 { 
       @extend %navigation-letters;
-      top:25px;
-      left:60px;
-      font-size:4em;
+      top:5px;
+      left:55px;
+      font-size:65px;
     }
     .char4 { 
       @extend %navigation-letters;
       top:15px;
       left:85px;
-      font-size:4em;
+      font-size:50px;
     }
     .char5 { 
       @extend %navigation-letters;
-      top:15px;
-      left:85px;
-      font-size:4em;
+      top:43px;
+      left:45px;
+      font-size:50px;
     }
     .char6 { 
       @extend %navigation-letters;
-      top:15px;
-      left:85px;
-      font-size:4em;
+      top:50px;
+      left:65px;
+      font-size:50px;
     }
     .char7 { 
       @extend %navigation-letters;
-      top:15px;
-      left:85px;
-      font-size:4em;
+      top:35px;
+      left:82px;
+      font-size:65px;
     }
   }
 }

@@ -487,33 +487,33 @@ small {
   width: 114px;
   background-position: -270px -34px; }
   .header-contact .nav-contact .char1 {
-    top: 5px;
+    top: 0px;
     left: 0px;
-    font-size: 5.5em; }
+    font-size: 80px; }
   .header-contact .nav-contact .char2 {
-    top: 30px;
-    left: 40px;
-    font-size: 3em; }
+    top: 18px;
+    left: 35px;
+    font-size: 45px; }
   .header-contact .nav-contact .char3 {
-    top: 25px;
-    left: 60px;
-    font-size: 4em; }
+    top: 5px;
+    left: 55px;
+    font-size: 65px; }
   .header-contact .nav-contact .char4 {
     top: 15px;
     left: 85px;
-    font-size: 4em; }
+    font-size: 50px; }
   .header-contact .nav-contact .char5 {
-    top: 15px;
-    left: 85px;
-    font-size: 4em; }
+    top: 43px;
+    left: 45px;
+    font-size: 50px; }
   .header-contact .nav-contact .char6 {
-    top: 15px;
-    left: 85px;
-    font-size: 4em; }
+    top: 50px;
+    left: 65px;
+    font-size: 50px; }
   .header-contact .nav-contact .char7 {
-    top: 15px;
-    left: 85px;
-    font-size: 4em; }
+    top: 35px;
+    left: 82px;
+    font-size: 65px; }
 
 .header-cart {
   width: 280px;
