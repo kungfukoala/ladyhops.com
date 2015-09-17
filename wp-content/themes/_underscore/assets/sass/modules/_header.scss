@@ -1,29 +1,18 @@
-.header {
-  @include center(820px);
-  margin-bottom:$spacing-large;
-  a {
-    text-decoration:none;
-  }
-  .utility-navigation {
-    @include horizontal-navigation($margin: 5px);
-  }
-  .primary-navigation {
-    font-size:$h3;
-    font-weight:600;
-    @include horizontal-navigation($margin: 5px);
-    a {
-      text-decoration:none;
-    }
-  }
-}
 %navigation {
   position:relative;
   height:145px;
   float:left;
 }
 %navigation-letters {
-  font-weight:700;
   position:absolute;
+  font-weight:700;
+}
+.header {
+  @include center(820px);
+  margin-bottom:$spacing-large;
+  a {
+    text-decoration:none;
+  }
 }
 .header-logo {
   float:left;
@@ -36,33 +25,33 @@
   .nav-story {
     .char1 { 
       @extend %navigation-letters;
-      top:30px;
-      left:35px;
-      font-size:55px;
+      top:37px;
+      left:45px;
+      font-size:40px;
     }
     .char2 {
       @extend %navigation-letters;
-      top:35px;
-      left:56px;
-      font-size:40px;
+      top:40px;
+      left:61px;
+      font-size:35px;
     }
     .char3 { 
       @extend %navigation-letters;
-      top:25px;
-      left:68px;
-      font-size:52px;
+      top:37px;
+      left:72px;
+      font-size:38px;
     }
     .char4 { 
       @extend %navigation-letters;
-      top:35px;
-      left:93px;
-      font-size:40px;
+      top:41px;
+      left:91px;
+      font-size:32px;
     }
     .char5 {
       @extend %navigation-letters;
-      top:35px;
-      left:106px;
-      font-size:45px;
+      top:44px;
+      left:103px;
+      font-size:31px;
     }
   }
 }
@@ -75,27 +64,27 @@
     // text-transform:uppercase;
     .char1 { 
       @extend %navigation-letters;
-      top:25px;
-      left:0px;
-      font-size:75px;
+      top:44px;
+      left:27px;
+      font-size:40px;
     }
     .char2 {
       @extend %navigation-letters;
-      top:37px;
-      left:35px;
-      font-size:50px;
+      top:49px;
+      left:48px;
+      font-size:35px;
     }
     .char3 { 
       @extend %navigation-letters;
-      top:30px;
-      left:60px;
-      font-size:50px;
+      top:50px;
+      left:67px;
+      font-size:35px;
     }
     .char4 { 
       @extend %navigation-letters;
-      top:25px;
+      top:50px;
       left:85px;
-      font-size:50px;
+      font-size:35px;
     }
   }
 }
@@ -105,47 +94,47 @@
   @extend %nav-left-background;
   background-position:-270px -34px;
   .nav-contact {
-    .char1 { 
+    .char1 {
       @extend %navigation-letters;
-      top:0px;
-      left:0px;
-      font-size:80px;
+      top:34px;
+      left:13px;
+      font-size:42px;
     }
     .char2 {
       @extend %navigation-letters;
-      top:18px;
-      left:35px;
-      font-size:45px;
+      top:41px;
+      left:28px;
+      font-size:28px;
     }
-    .char3 { 
+    .char3 {
       @extend %navigation-letters;
-      top:5px;
-      left:55px;
-      font-size:65px;
+      top:39px;
+      left:42px;
+      font-size:32px;
     }
-    .char4 { 
+    .char4 {
       @extend %navigation-letters;
-      top:15px;
-      left:85px;
-      font-size:50px;
+      top:37px;
+      left:56px;
+      font-size:35px;
     }
-    .char5 { 
+    .char5 {
       @extend %navigation-letters;
       top:43px;
-      left:45px;
-      font-size:50px;
+      left:66px;
+      font-size:25px;
     }
-    .char6 { 
+    .char6 {
       @extend %navigation-letters;
-      top:50px;
-      left:65px;
-      font-size:50px;
+      top:39px;
+      left:78px;
+      font-size:30px;
     }
-    .char7 { 
+    .char7 {
       @extend %navigation-letters;
-      top:35px;
-      left:82px;
-      font-size:65px;
+      top:42px;
+      left:92px;
+      font-size:28px;
     }
   }
 }
@@ -154,14 +143,17 @@
   width:280px;
   @extend %nav-right-background;
   background-position:-8px -9px;
+  font-family:$font-family-secondary;
+  font-size:$h6;
+  text-transform:uppercase;
   .nav-account {
     position:absolute;
-    top:70px;
-    right:115px;
+    top:80px;
+    right:75px;
   }
   .nav-bag {
     position:absolute;
-    top:88px;
+    top:93px;
     right:75px;
   }
 }

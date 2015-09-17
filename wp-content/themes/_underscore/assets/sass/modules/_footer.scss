@@ -1,0 +1,16 @@
+.footer {
+  @include cf();
+  width:100%;
+  .footer-search {
+    @include col(1/3);
+  }
+  .footer-nav {
+    @include col(1/3);
+  }
+  .footer-legal {
+    @include col(1/3);
+  }
+}
+.copyright {
+  font-family:$font-family-secondary;
+}

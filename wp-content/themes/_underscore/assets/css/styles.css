@@ -326,7 +326,7 @@ body {
   font-size: 2em; }
 
 .h4, h4 {
-  font-size: 1em; }
+  font-size: 1.3em; }
 
 .h5, h5 {
   font-size: 0.8em; }
@@ -389,6 +389,15 @@ small {
   .container:after {
     clear: both; }
 
+.header-story, .header-shop, .header-contact, .header-cart {
+  position: relative;
+  height: 145px;
+  float: left; }
+
+.header-story .nav-story .char1, .header-story .nav-story .char2, .header-story .nav-story .char3, .header-story .nav-story .char4, .header-story .nav-story .char5, .header-shop .nav-shop .char1, .header-shop .nav-shop .char2, .header-shop .nav-shop .char3, .header-shop .nav-shop .char4, .header-contact .nav-contact .char1, .header-contact .nav-contact .char2, .header-contact .nav-contact .char3, .header-contact .nav-contact .char4, .header-contact .nav-contact .char5, .header-contact .nav-contact .char6, .header-contact .nav-contact .char7 {
+  position: absolute;
+  font-weight: 700; }
+
 .header {
   width: auto;
   max-width: 820px;
@@ -401,40 +410,6 @@ small {
   margin-bottom: 4em; }
   .header a {
     text-decoration: none; }
-  .header .utility-navigation ul {
-    float: left;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style-type: none; }
-  .header .utility-navigation li {
-    float: left;
-    display: inline;
-    margin: 5px; }
-  .header .primary-navigation {
-    font-size: 2em;
-    font-weight: 600; }
-    .header .primary-navigation ul {
-      float: left;
-      width: 100%;
-      padding: 0;
-      margin: 0;
-      list-style-type: none; }
-    .header .primary-navigation li {
-      float: left;
-      display: inline;
-      margin: 5px; }
-    .header .primary-navigation a {
-      text-decoration: none; }
-
-.header-story, .header-shop, .header-contact, .header-cart {
-  position: relative;
-  height: 145px;
-  float: left; }
-
-.header-story .nav-story .char1, .header-story .nav-story .char2, .header-story .nav-story .char3, .header-story .nav-story .char4, .header-story .nav-story .char5, .header-shop .nav-shop .char1, .header-shop .nav-shop .char2, .header-shop .nav-shop .char3, .header-shop .nav-shop .char4, .header-contact .nav-contact .char1, .header-contact .nav-contact .char2, .header-contact .nav-contact .char3, .header-contact .nav-contact .char4, .header-contact .nav-contact .char5, .header-contact .nav-contact .char6, .header-contact .nav-contact .char7 {
-  font-weight: 700;
-  position: absolute; }
 
 .header-logo {
   float: left; }
@@ -443,94 +418,133 @@ small {
   width: 150px;
   background-position: 0 -34px; }
   .header-story .nav-story .char1 {
-    top: 30px;
-    left: 35px;
-    font-size: 55px; }
+    top: 37px;
+    left: 45px;
+    font-size: 40px; }
   .header-story .nav-story .char2 {
-    top: 35px;
-    left: 56px;
-    font-size: 40px; }
+    top: 40px;
+    left: 61px;
+    font-size: 35px; }
   .header-story .nav-story .char3 {
-    top: 25px;
-    left: 68px;
-    font-size: 52px; }
+    top: 37px;
+    left: 72px;
+    font-size: 38px; }
   .header-story .nav-story .char4 {
-    top: 35px;
-    left: 93px;
-    font-size: 40px; }
+    top: 41px;
+    left: 91px;
+    font-size: 32px; }
   .header-story .nav-story .char5 {
-    top: 35px;
-    left: 106px;
-    font-size: 45px; }
+    top: 44px;
+    left: 103px;
+    font-size: 31px; }
 
 .header-shop {
   width: 120px;
   background-position: -150px -34px; }
   .header-shop .nav-shop .char1 {
-    top: 25px;
-    left: 0px;
-    font-size: 75px; }
+    top: 44px;
+    left: 27px;
+    font-size: 40px; }
   .header-shop .nav-shop .char2 {
-    top: 37px;
-    left: 35px;
-    font-size: 50px; }
+    top: 49px;
+    left: 48px;
+    font-size: 35px; }
   .header-shop .nav-shop .char3 {
-    top: 30px;
-    left: 60px;
-    font-size: 50px; }
+    top: 50px;
+    left: 67px;
+    font-size: 35px; }
   .header-shop .nav-shop .char4 {
-    top: 25px;
+    top: 50px;
     left: 85px;
-    font-size: 50px; }
+    font-size: 35px; }
 
 .header-contact {
   width: 114px;
   background-position: -270px -34px; }
   .header-contact .nav-contact .char1 {
-    top: 0px;
-    left: 0px;
-    font-size: 80px; }
+    top: 34px;
+    left: 13px;
+    font-size: 42px; }
   .header-contact .nav-contact .char2 {
-    top: 18px;
-    left: 35px;
-    font-size: 45px; }
+    top: 41px;
+    left: 28px;
+    font-size: 28px; }
   .header-contact .nav-contact .char3 {
-    top: 5px;
-    left: 55px;
-    font-size: 65px; }
+    top: 39px;
+    left: 42px;
+    font-size: 32px; }
   .header-contact .nav-contact .char4 {
-    top: 15px;
-    left: 85px;
-    font-size: 50px; }
+    top: 37px;
+    left: 56px;
+    font-size: 35px; }
   .header-contact .nav-contact .char5 {
     top: 43px;
-    left: 45px;
-    font-size: 50px; }
+    left: 66px;
+    font-size: 25px; }
   .header-contact .nav-contact .char6 {
-    top: 50px;
-    left: 65px;
-    font-size: 50px; }
+    top: 39px;
+    left: 78px;
+    font-size: 30px; }
   .header-contact .nav-contact .char7 {
-    top: 35px;
-    left: 82px;
-    font-size: 65px; }
+    top: 42px;
+    left: 92px;
+    font-size: 28px; }
 
 .header-cart {
   width: 280px;
-  background-position: -8px -9px; }
+  background-position: -8px -9px;
+  font-family: "Sofia Rough W00";
+  font-size: 0.7em;
+  text-transform: uppercase; }
   .header-cart .nav-account {
     position: absolute;
-    top: 70px;
-    right: 115px; }
+    top: 80px;
+    right: 75px; }
   .header-cart .nav-bag {
     position: absolute;
-    top: 88px;
+    top: 93px;
     right: 75px; }
 
 .header-social {
   float: right;
   padding-top: 5px;
   padding-right: 30px; }
+
+.footer {
+  *zoom: 1;
+  width: 100%; }
+  .footer:before, .footer:after {
+    content: '';
+    display: table; }
+  .footer:after {
+    clear: both; }
+  .footer .footer-search {
+    float: left;
+    clear: none;
+    width: 31.3333333333%;
+    margin-left: 0%;
+    margin-right: 3%; }
+    .footer .footer-search:last-child {
+      margin-right: 0%; }
+  .footer .footer-nav {
+    float: left;
+    clear: none;
+    width: 31.3333333333%;
+    margin-left: 0%;
+    margin-right: 3%; }
+    .footer .footer-nav:last-child {
+      margin-right: 0%; }
+  .footer .footer-legal {
+    float: left;
+    clear: none;
+    width: 31.3333333333%;
+    margin-left: 0%;
+    margin-right: 3%; }
+    .footer .footer-legal:last-child {
+      margin-right: 0%; }
+
+.copyright {
+  font-family: "Sofia Rough W00"; }
 
 .introduction {
   font-size: 2em;
