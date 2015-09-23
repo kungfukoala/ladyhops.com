@@ -359,17 +359,8 @@ small {
   font-size: 0.7em;
   line-height: 1em; }
 
-.header-story, .header-shop, .header-contact {
-  background: url(/wp-content/themes/_underscore/assets/images/navigation-left.png) no-repeat; }
-  @media screen and (min-width: 768px) {
-    .header-story, .header-shop, .header-contact {
-      background: url(/wp-content/themes/_underscore/assets/images/navigation-left.png) no-repeat; } }
-
-.header-cart {
-  background: url(/wp-content/themes/_underscore/assets/images/navigation-right.png) no-repeat; }
-  @media screen and (min-width: 768px) {
-    .header-cart {
-      background: url(/wp-content/themes/_underscore/assets/images/navigation-right.png) no-repeat; } }
+.header-story, .header-shop, .header-contact, .header-cart {
+  background: url(/wp-content/themes/_underscore/assets/images/navigation1.2.png) no-repeat; }
 
 .border-horizontal {
   background: url(/wp-content/themes/_underscore/assets/images/border-horizontal.png) no-repeat; }
@@ -401,11 +392,9 @@ small {
 .header-story, .header-shop, .header-contact, .header-cart {
   position: relative;
   height: 145px;
-  float: left; }
-
-.header-story .nav-story .char1, .header-story .nav-story .char2, .header-story .nav-story .char3, .header-story .nav-story .char4, .header-story .nav-story .char5, .header-shop .nav-shop .char1, .header-shop .nav-shop .char2, .header-shop .nav-shop .char3, .header-shop .nav-shop .char4, .header-contact .nav-contact .char1, .header-contact .nav-contact .char2, .header-contact .nav-contact .char3, .header-contact .nav-contact .char4, .header-contact .nav-contact .char5, .header-contact .nav-contact .char6, .header-contact .nav-contact .char7 {
-  position: absolute;
-  font-weight: 700; }
+  float: left;
+  font-family: "Sofia Rough W00";
+  font-size: 15px; }
 
 .header {
   width: auto;
@@ -421,87 +410,41 @@ small {
     text-decoration: none; }
 
 .header-logo {
-  float: left; }
+  float: center;
+  text-align: center;
+  padding-left: 10px; }
+  @media screen and (min-width: 768px) {
+    .header-logo {
+      float: left;
+      text-align: left; } }
 
 .header-story {
   width: 150px;
   background-position: 0 -34px; }
-  .header-story .nav-story .char1 {
-    top: 37px;
-    left: 45px;
-    font-size: 40px; }
-  .header-story .nav-story .char2 {
-    top: 40px;
-    left: 61px;
-    font-size: 35px; }
-  .header-story .nav-story .char3 {
-    top: 37px;
-    left: 72px;
-    font-size: 38px; }
-  .header-story .nav-story .char4 {
-    top: 41px;
-    left: 91px;
-    font-size: 32px; }
-  .header-story .nav-story .char5 {
-    top: 44px;
-    left: 103px;
-    font-size: 31px; }
+  .header-story .nav-story {
+    position: absolute;
+    top: 53px;
+    left: 54px; }
 
 .header-shop {
   width: 120px;
   background-position: -150px -34px; }
-  .header-shop .nav-shop .char1 {
-    top: 44px;
-    left: 27px;
-    font-size: 40px; }
-  .header-shop .nav-shop .char2 {
-    top: 49px;
-    left: 48px;
-    font-size: 35px; }
-  .header-shop .nav-shop .char3 {
-    top: 50px;
-    left: 67px;
-    font-size: 35px; }
-  .header-shop .nav-shop .char4 {
-    top: 50px;
-    left: 85px;
-    font-size: 35px; }
+  .header-shop .nav-shop {
+    position: absolute;
+    top: 70px;
+    left: 65px; }
 
 .header-contact {
   width: 114px;
   background-position: -270px -34px; }
-  .header-contact .nav-contact .char1 {
-    top: 34px;
-    left: 13px;
-    font-size: 42px; }
-  .header-contact .nav-contact .char2 {
-    top: 41px;
-    left: 28px;
-    font-size: 28px; }
-  .header-contact .nav-contact .char3 {
-    top: 39px;
-    left: 42px;
-    font-size: 32px; }
-  .header-contact .nav-contact .char4 {
-    top: 37px;
-    left: 56px;
-    font-size: 35px; }
-  .header-contact .nav-contact .char5 {
-    top: 43px;
-    left: 66px;
-    font-size: 25px; }
-  .header-contact .nav-contact .char6 {
-    top: 39px;
-    left: 78px;
-    font-size: 30px; }
-  .header-contact .nav-contact .char7 {
-    top: 42px;
-    left: 92px;
-    font-size: 28px; }
+  .header-contact .nav-contact {
+    position: absolute;
+    top: 53px;
+    left: 15px; }
 
 .header-cart {
-  width: 280px;
-  background-position: -8px -9px;
+  width: 270px;
+  background-position: -385px -34px;
   font-family: "Sofia Rough W00";
   font-size: 0.7em;
   text-transform: uppercase; }
@@ -515,9 +458,9 @@ small {
     right: 75px; }
 
 .header-social {
-  float: right;
-  padding-top: 5px;
-  padding-right: 30px; }
+  position: absolute;
+  top: 80px;
+  left: 10px; }
 
 .footer {
   margin-top: 4em; }

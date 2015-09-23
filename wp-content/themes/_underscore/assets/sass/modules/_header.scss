@@ -2,10 +2,8 @@
   position:relative;
   height:145px;
   float:left;
-}
-%navigation-letters {
-  position:absolute;
-  font-weight:700;
+  font-family:$font-family-secondary;
+  font-size:15px;
 }
 .header {
   @include center(820px);
@@ -15,134 +13,53 @@
   }
 }
 .header-logo {
-  float:left;
+  float:center;
+  text-align:center;
+  padding-left:10px;
+  @include min-screen(nth($res-collection, 3)*1px) {
+    float:left;
+    text-align:left;
+  }
 }
 .header-story {
   @extend %navigation;
   width:150px;
-  @extend %nav-left-background;
+  @extend %nav-background;
   background-position:0 -34px;
+  // font-family:$font-family-secondary;
   .nav-story {
-    .char1 { 
-      @extend %navigation-letters;
-      top:37px;
-      left:45px;
-      font-size:40px;
-    }
-    .char2 {
-      @extend %navigation-letters;
-      top:40px;
-      left:61px;
-      font-size:35px;
-    }
-    .char3 { 
-      @extend %navigation-letters;
-      top:37px;
-      left:72px;
-      font-size:38px;
-    }
-    .char4 { 
-      @extend %navigation-letters;
-      top:41px;
-      left:91px;
-      font-size:32px;
-    }
-    .char5 {
-      @extend %navigation-letters;
-      top:44px;
-      left:103px;
-      font-size:31px;
-    }
+    position:absolute;
+    top:53px;
+    left:54px;
   }
 }
 .header-shop {
   @extend %navigation;
   width:120px;
-  @extend %nav-left-background;
+  @extend %nav-background;
   background-position:-150px -34px;
   .nav-shop {
-    // text-transform:uppercase;
-    .char1 { 
-      @extend %navigation-letters;
-      top:44px;
-      left:27px;
-      font-size:40px;
-    }
-    .char2 {
-      @extend %navigation-letters;
-      top:49px;
-      left:48px;
-      font-size:35px;
-    }
-    .char3 { 
-      @extend %navigation-letters;
-      top:50px;
-      left:67px;
-      font-size:35px;
-    }
-    .char4 { 
-      @extend %navigation-letters;
-      top:50px;
-      left:85px;
-      font-size:35px;
-    }
+    position:absolute;
+    top:70px;
+    left:65px;
   }
 }
 .header-contact {
   @extend %navigation;
   width:114px;
-  @extend %nav-left-background;
+  @extend %nav-background;
   background-position:-270px -34px;
   .nav-contact {
-    .char1 {
-      @extend %navigation-letters;
-      top:34px;
-      left:13px;
-      font-size:42px;
-    }
-    .char2 {
-      @extend %navigation-letters;
-      top:41px;
-      left:28px;
-      font-size:28px;
-    }
-    .char3 {
-      @extend %navigation-letters;
-      top:39px;
-      left:42px;
-      font-size:32px;
-    }
-    .char4 {
-      @extend %navigation-letters;
-      top:37px;
-      left:56px;
-      font-size:35px;
-    }
-    .char5 {
-      @extend %navigation-letters;
-      top:43px;
-      left:66px;
-      font-size:25px;
-    }
-    .char6 {
-      @extend %navigation-letters;
-      top:39px;
-      left:78px;
-      font-size:30px;
-    }
-    .char7 {
-      @extend %navigation-letters;
-      top:42px;
-      left:92px;
-      font-size:28px;
-    }
+    position:absolute;
+    top:53px;
+    left:15px;
   }
 }
 .header-cart {
   @extend %navigation;
-  width:280px;
-  @extend %nav-right-background;
-  background-position:-8px -9px;
+  width:270px;
+  @extend %nav-background;
+  background-position:-385px -34px;
   font-family:$font-family-secondary;
   font-size:$h6;
   text-transform:uppercase;
@@ -158,7 +75,7 @@
   }
 }
 .header-social {
-  float:right;
-  padding-top:5px;
-  padding-right:30px;
+  position:absolute;
+  top:80px;
+  left:10px;
 }
