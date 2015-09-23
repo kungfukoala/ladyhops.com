@@ -1,7 +1,5 @@
 <?php get_header(); ?>
-<div class="container">
-	<main role="main">
-		<section>
+		<section role="main">
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 			<article id="post-<?php the_ID(); ?>" class="introduction">
 				<?php the_content(); ?>
@@ -13,6 +11,4 @@
 			</article>
 		<?php endif; ?>
 		</section>
-	</main>
-<?php get_footer(); ?>
-</div>
+  <?php get_footer(); ?>

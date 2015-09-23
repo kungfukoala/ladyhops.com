@@ -1,16 +1,20 @@
 .footer {
-  @include cf();
-  width:100%;
-  .footer-search {
-    @include col(1/3);
+  margin-top:$spacing-large;
+  .footer-left {
+    @include column(1/3);
+    h3 {
+      font-family:$font-family-secondary;
+      font-size:$h5;
+    }
   }
-  .footer-nav {
-    @include col(1/3);
+  .footer-right {
+    @include column(2/3);
   }
-  .footer-legal {
-    @include col(1/3);
+  .footer-made-in-oregon {
+    font-family:$font-family-secondary;
+    font-size:$h6;
   }
 }
 .copyright {
-  font-family:$font-family-secondary;
+  border-top:1px dotted;
 }

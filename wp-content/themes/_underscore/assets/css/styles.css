@@ -329,7 +329,7 @@ body {
   font-size: 1.3em; }
 
 .h5, h5 {
-  font-size: 0.8em; }
+  font-size: 1em; }
 
 .h6, h6 {
   font-size: 0.7em; }
@@ -370,6 +370,15 @@ small {
   @media screen and (min-width: 768px) {
     .header-cart {
       background: url(/wp-content/themes/_underscore/assets/images/navigation-right.png) no-repeat; } }
+
+.border-horizontal {
+  background: url(/wp-content/themes/_underscore/assets/images/border-horizontal.png) no-repeat; }
+
+.border-vertical {
+  background: url(/wp-content/themes/_underscore/assets/images/border-vertical.png) no-repeat; }
+
+.border-dash-vertical {
+  background: url(/wp-content/themes/_underscore/assets/images/border-dash-vertical.png) no-repeat; }
 
 .main-container {
   width: auto;
@@ -511,40 +520,45 @@ small {
   padding-right: 30px; }
 
 .footer {
-  *zoom: 1;
-  width: 100%; }
-  .footer:before, .footer:after {
-    content: '';
-    display: table; }
-  .footer:after {
-    clear: both; }
-  .footer .footer-search {
+  margin-top: 4em; }
+  .footer .footer-left {
     float: left;
     clear: none;
     width: 31.3333333333%;
     margin-left: 0%;
     margin-right: 3%; }
-    .footer .footer-search:last-child {
+    .footer .footer-left:last-child {
       margin-right: 0%; }
-  .footer .footer-nav {
+    .footer .footer-left h3 {
+      font-family: "Sofia Rough W00";
+      font-size: 1em; }
+  .footer .footer-right {
     float: left;
     clear: none;
-    width: 31.3333333333%;
+    width: 65.6666666667%;
     margin-left: 0%;
     margin-right: 3%; }
-    .footer .footer-nav:last-child {
+    .footer .footer-right:last-child {
       margin-right: 0%; }
-  .footer .footer-legal {
-    float: left;
-    clear: none;
-    width: 31.3333333333%;
-    margin-left: 0%;
-    margin-right: 3%; }
-    .footer .footer-legal:last-child {
-      margin-right: 0%; }
+  .footer .footer-made-in-oregon {
+    font-family: "Sofia Rough W00";
+    font-size: 0.7em; }
 
 .copyright {
-  font-family: "Sofia Rough W00"; }
+  border-top: 1px dotted; }
+
+.border-horizontal {
+  width: 100%;
+  clear: both;
+  height: 20px; }
+
+.border-vertical {
+  width: 100%;
+  height: 7px; }
+
+.border-dash-vertical {
+  width: 100%;
+  height: 7px; }
 
 .introduction {
   font-size: 2em;

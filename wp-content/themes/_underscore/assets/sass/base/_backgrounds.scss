@@ -1,6 +1,9 @@
 // Background Assets
 $nav-background-left: "navigation-left.png";
 $nav-background-right: "navigation-right.png";
+$img-border-horizonal: "border-horizontal.png";
+$img-border-vertical: "border-vertical.png";
+$img-border-vertical-dash: "border-dash-vertical.png";
 // Background Code
 %nav-left-background { 
   background:url(#{$img-assetpath}#{$nav-background-left}) no-repeat;
@@ -13,4 +16,13 @@ $nav-background-right: "navigation-right.png";
   @include min-screen(nth($res-collection, 3)*1px) {
     background:url(#{$img-assetpath}#{$nav-background-right}) no-repeat;
   }
+}
+%img-border-horizontal { 
+  background:url(#{$img-assetpath}#{$img-border-horizonal}) no-repeat;
+}
+%img-border-vertical { 
+  background:url(#{$img-assetpath}#{$img-border-vertical}) no-repeat;
+}
+%img-border-dash-vertical { 
+  background:url(#{$img-assetpath}#{$img-border-vertical-dash}) no-repeat;
 }
