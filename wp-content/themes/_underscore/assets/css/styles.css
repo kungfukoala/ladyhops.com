@@ -394,7 +394,12 @@ small {
   height: 145px;
   float: left;
   font-family: "Sofia Rough W00";
-  font-size: 15px; }
+  font-size: 15px;
+  padding-top: 15px; }
+  @media screen and (min-width: 1024px) {
+    .header-story, .header-shop, .header-contact, .header-cart {
+      float: left;
+      text-align: left; } }
 
 .header {
   width: auto;
@@ -413,7 +418,7 @@ small {
   float: center;
   text-align: center;
   padding-left: 10px; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     .header-logo {
       float: left;
       text-align: left; } }
@@ -451,11 +456,11 @@ small {
   .header-cart .nav-account {
     position: absolute;
     top: 80px;
-    right: 75px; }
+    right: 65px; }
   .header-cart .nav-bag {
     position: absolute;
     top: 93px;
-    right: 75px; }
+    right: 65px; }
 
 .header-social {
   position: absolute;

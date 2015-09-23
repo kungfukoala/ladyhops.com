@@ -4,6 +4,11 @@
   float:left;
   font-family:$font-family-secondary;
   font-size:15px;
+  padding-top:15px;
+  @include min-screen(nth($res-collection, 4)*1px) {
+    float:left;
+    text-align:left;
+  }
 }
 .header {
   @include center(820px);
@@ -16,7 +21,7 @@
   float:center;
   text-align:center;
   padding-left:10px;
-  @include min-screen(nth($res-collection, 3)*1px) {
+  @include min-screen(nth($res-collection, 4)*1px) {
     float:left;
     text-align:left;
   }
@@ -66,12 +71,12 @@
   .nav-account {
     position:absolute;
     top:80px;
-    right:75px;
+    right:65px;
   }
   .nav-bag {
     position:absolute;
     top:93px;
-    right:75px;
+    right:65px;
   }
 }
 .header-social {
