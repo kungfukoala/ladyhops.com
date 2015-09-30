@@ -389,6 +389,11 @@ small {
   .container:after {
     clear: both; }
 
+.woocommerce .woocommerce-info {
+  border-top: 1px dotted black; }
+.woocommerce .woocommerce-info::before {
+  color: black; }
+
 .header-story, .header-shop, .header-contact, .header-cart {
   position: relative;
   height: 145px;
@@ -400,6 +405,12 @@ small {
     .header-story, .header-shop, .header-contact, .header-cart {
       float: left;
       text-align: left; } }
+
+.header-story, .header-shop, .header-contact, .header-cart {
+  margin-top: 15px; }
+  @media screen and (min-width: 1024px) {
+    .header-story, .header-shop, .header-contact, .header-cart {
+      margin-top: 0px; } }
 
 .header {
   width: auto;
@@ -415,13 +426,30 @@ small {
     text-decoration: none; }
 
 .header-logo {
-  float: center;
   text-align: center;
-  padding-left: 10px; }
+  padding-left: 10px;
+  clear: both; }
   @media screen and (min-width: 1024px) {
     .header-logo {
       float: left;
       text-align: left; } }
+
+.header-navigation {
+  width: auto;
+  max-width: 780px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0; }
+  @media screen and (min-width: 1024px) {
+    .header-navigation {
+      max-width: none;
+      margin-right: 0;
+      margin-left: 0;
+      padding-left: 0;
+      padding-right: 0; } }
 
 .header-story {
   width: 150px;
@@ -507,6 +535,28 @@ small {
 .border-dash-vertical {
   width: 100%;
   height: 7px; }
+
+.search-input, .search-submit {
+  font-family: "Sofia Rough W00";
+  font-size: 12px;
+  border: none;
+  border-bottom: 5px solid black; }
+
+.search-input {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  width: 250px; }
+
+.search-submit {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: inherit; }
+
+button.search-submit:hover {
+  color: #c8c8c8;
+  border-color: #c8c8c8; }
 
 .introduction {
   font-size: 2em;

@@ -10,6 +10,12 @@
     text-align:left;
   }
 }
+%small-screen-navigation {
+  margin-top:15px;
+  @include min-screen(nth($res-collection, 4)*1px) {
+    margin-top:0px;
+  }
+}
 .header {
   @include center(820px);
   margin-bottom:$spacing-large;
@@ -18,20 +24,26 @@
   }
 }
 .header-logo {
-  float:center;
   text-align:center;
   padding-left:10px;
+  clear:both;
   @include min-screen(nth($res-collection, 4)*1px) {
     float:left;
     text-align:left;
   }
 }
+.header-navigation {
+  @include center(780px);
+  @include min-screen(nth($res-collection, 4)*1px) {
+    @include uncenter();
+  }
+}
 .header-story {
   @extend %navigation;
+  @extend %small-screen-navigation;
   width:150px;
   @extend %nav-background;
   background-position:0 -34px;
-  // font-family:$font-family-secondary;
   .nav-story {
     position:absolute;
     top:53px;
@@ -40,6 +52,7 @@
 }
 .header-shop {
   @extend %navigation;
+  @extend %small-screen-navigation;
   width:120px;
   @extend %nav-background;
   background-position:-150px -34px;
@@ -51,6 +64,7 @@
 }
 .header-contact {
   @extend %navigation;
+  @extend %small-screen-navigation;
   width:114px;
   @extend %nav-background;
   background-position:-270px -34px;
@@ -62,6 +76,7 @@
 }
 .header-cart {
   @extend %navigation;
+  @extend %small-screen-navigation;
   width:270px;
   @extend %nav-background;
   background-position:-385px -34px;
