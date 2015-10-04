@@ -32,6 +32,15 @@ h1, h2, h3, h4, h5, h6 {
 p {
   line-height:$line-height;
 }
+a, a:visited {
+  color:black;
+}
+a:active {
+  color:$light-grey;
+}
+a:hover {
+  color:$light-grey;
+}
 em, i, q {
   font-style:italic;
 }

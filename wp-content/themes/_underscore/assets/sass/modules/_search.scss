@@ -1,0 +1,24 @@
+%search-form-defaults {
+  font-family:$font-family-secondary;
+  font-size:12px;
+  border:none;
+  border-bottom:5px solid $primary;
+}
+.search-input {
+  padding-top:10px;
+  padding-bottom:5px;
+  margin-top:$spacing-large;
+  margin-bottom:$spacing-large;
+  width:250px;
+  @extend %search-form-defaults;
+}
+.search-submit {
+  padding-top:10px;
+  padding-bottom:5px;
+  background-color:inherit;
+  @extend %search-form-defaults;
+}
+button.search-submit:hover {
+  color:$light-grey;
+  border-color:$light-grey;
+}

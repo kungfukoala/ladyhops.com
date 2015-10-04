@@ -323,19 +323,28 @@ body {
   font-size: 3em; }
 
 .h3, h3 {
-  font-size: 1.5em; }
+  font-size: 2em; }
 
 .h4, h4 {
-  font-size: 1em; }
+  font-size: 1.3em; }
 
 .h5, h5 {
-  font-size: 0.8em; }
+  font-size: 1em; }
 
 .h6, h6 {
   font-size: 0.7em; }
 
 p {
   line-height: 1.5em; }
+
+a, a:visited {
+  color: black; }
+
+a:active {
+  color: #c8c8c8; }
+
+a:hover {
+  color: #c8c8c8; }
 
 em, i, q {
   font-style: italic; }
@@ -350,9 +359,21 @@ small {
   font-size: 0.7em;
   line-height: 1em; }
 
+.header-story, .header-shop, .header-contact, .header-cart {
+  background: url(/wp-content/themes/_underscore/assets/images/navigation1.2.png) no-repeat; }
+
+.border-horizontal {
+  background: url(/wp-content/themes/_underscore/assets/images/border-horizontal.png) no-repeat; }
+
+.border-vertical {
+  background: url(/wp-content/themes/_underscore/assets/images/border-vertical.png) no-repeat; }
+
+.border-dash-vertical {
+  background: url(/wp-content/themes/_underscore/assets/images/border-dash-vertical.png) no-repeat; }
+
 .main-container {
   width: auto;
-  max-width: 1024px;
+  max-width: 820px;
   float: none;
   display: block;
   margin-right: auto;
@@ -360,38 +381,183 @@ small {
   padding-left: 15px;
   padding-right: 15px; }
 
+.container {
+  *zoom: 1; }
+  .container:before, .container:after {
+    content: '';
+    display: table; }
+  .container:after {
+    clear: both; }
+
+.woocommerce .woocommerce-info {
+  border-top: 1px dotted black; }
+.woocommerce .woocommerce-info::before {
+  color: black; }
+
+.header-story, .header-shop, .header-contact, .header-cart {
+  position: relative;
+  height: 145px;
+  float: left;
+  font-family: "Sofia Rough W00";
+  font-size: 15px;
+  padding-top: 15px; }
+  @media screen and (min-width: 1024px) {
+    .header-story, .header-shop, .header-contact, .header-cart {
+      float: left;
+      text-align: left; } }
+
+.header-story, .header-shop, .header-contact, .header-cart {
+  margin-top: 15px; }
+  @media screen and (min-width: 1024px) {
+    .header-story, .header-shop, .header-contact, .header-cart {
+      margin-top: 0px; } }
+
 .header {
-  margin: 0; }
-  .header .utility-navigation ul {
-    float: left;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style-type: none; }
-  .header .utility-navigation li {
-    float: left;
-    display: inline;
-    margin: 5px; }
-  .header .primary-navigation {
-    font-size: 1.5em;
-    font-weight: 600; }
-    .header .primary-navigation ul {
+  width: auto;
+  max-width: 820px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 4em; }
+  .header a {
+    text-decoration: none; }
+
+.header-logo {
+  text-align: center;
+  padding-left: 10px;
+  clear: both; }
+  @media screen and (min-width: 1024px) {
+    .header-logo {
       float: left;
-      width: 100%;
-      padding: 0;
-      margin: 0;
-      list-style-type: none; }
-    .header .primary-navigation li {
-      float: left;
-      display: inline;
-      margin: 5px; }
-    .header .primary-navigation a {
-      text-decoration: none; }
+      text-align: left; } }
+
+.header-navigation {
+  width: auto;
+  max-width: 780px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0; }
+  @media screen and (min-width: 1024px) {
+    .header-navigation {
+      max-width: none;
+      margin-right: 0;
+      margin-left: 0;
+      padding-left: 0;
+      padding-right: 0; } }
+
+.header-story {
+  width: 150px;
+  background-position: 0 -34px; }
+  .header-story .nav-story {
+    position: absolute;
+    top: 53px;
+    left: 54px; }
+
+.header-shop {
+  width: 120px;
+  background-position: -150px -34px; }
+  .header-shop .nav-shop {
+    position: absolute;
+    top: 70px;
+    left: 65px; }
+
+.header-contact {
+  width: 114px;
+  background-position: -270px -34px; }
+  .header-contact .nav-contact {
+    position: absolute;
+    top: 53px;
+    left: 15px; }
+
+.header-cart {
+  width: 270px;
+  background-position: -385px -34px;
+  font-family: "Sofia Rough W00";
+  font-size: 0.7em;
+  text-transform: uppercase; }
+  .header-cart .nav-account {
+    position: absolute;
+    top: 80px;
+    right: 65px; }
+  .header-cart .nav-bag {
+    position: absolute;
+    top: 93px;
+    right: 65px; }
+
+.header-social {
+  position: absolute;
+  top: 80px;
+  left: 10px; }
+
+.footer {
+  margin-top: 4em; }
+  .footer .footer-left {
+    float: left;
+    clear: none;
+    width: 31.3333333333%;
+    margin-left: 0%;
+    margin-right: 3%; }
+    .footer .footer-left:last-child {
+      margin-right: 0%; }
+    .footer .footer-left h3 {
+      font-family: "Sofia Rough W00";
+      font-size: 1em; }
+  .footer .footer-right {
+    float: left;
+    clear: none;
+    width: 65.6666666667%;
+    margin-left: 0%;
+    margin-right: 3%; }
+    .footer .footer-right:last-child {
+      margin-right: 0%; }
+  .footer .footer-made-in-oregon {
+    font-family: "Sofia Rough W00";
+    font-size: 0.7em; }
+
+.copyright {
+  border-top: 1px dotted; }
+
+.border-horizontal {
+  width: 100%;
+  clear: both;
+  height: 20px; }
+
+.border-vertical {
+  width: 100%;
+  height: 7px; }
+
+.border-dash-vertical {
+  width: 100%;
+  height: 7px; }
+
+.search-input, .search-submit {
+  font-family: "Sofia Rough W00";
+  font-size: 12px;
+  border: none;
+  border-bottom: 5px solid black; }
+
+.search-input {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  width: 250px; }
+
+.search-submit {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: inherit; }
+
+button.search-submit:hover {
+  color: #c8c8c8;
+  border-color: #c8c8c8; }
 
 .introduction {
-  font-size: 3em;
-  font-weight: 600; }
-
-.introduction-2 {
-  font-size: 3em;
-  font-weight: 400; }
+  font-size: 2em;
+  font-weight: 700; }

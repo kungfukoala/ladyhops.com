@@ -1,0 +1,20 @@
+.footer {
+  margin-top:$spacing-large;
+  .footer-left {
+    @include column(1/3);
+    h3 {
+      font-family:$font-family-secondary;
+      font-size:$h5;
+    }
+  }
+  .footer-right {
+    @include column(2/3);
+  }
+  .footer-made-in-oregon {
+    font-family:$font-family-secondary;
+    font-size:$h6;
+  }
+}
+.copyright {
+  border-top:1px dotted;
+}

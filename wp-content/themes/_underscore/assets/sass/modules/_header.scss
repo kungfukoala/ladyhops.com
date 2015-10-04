@@ -1,16 +1,101 @@
+%navigation {
+  position:relative;
+  height:145px;
+  float:left;
+  font-family:$font-family-secondary;
+  font-size:15px;
+  padding-top:15px;
+  @include min-screen(nth($res-collection, 4)*1px) {
+    float:left;
+    text-align:left;
+  }
+}
+%small-screen-navigation {
+  margin-top:15px;
+  @include min-screen(nth($res-collection, 4)*1px) {
+    margin-top:0px;
+  }
+}
 .header {
-  margin:0;
-  .logo {
+  @include center(820px);
+  margin-bottom:$spacing-large;
+  a {
+    text-decoration:none;
   }
-  .utility-navigation {
-    @include horizontal-navigation($margin: 5px);
+}
+.header-logo {
+  text-align:center;
+  padding-left:10px;
+  clear:both;
+  @include min-screen(nth($res-collection, 4)*1px) {
+    float:left;
+    text-align:left;
   }
-  .primary-navigation {
-    font-size:$h3;
-    font-weight:600;
-    @include horizontal-navigation($margin: 5px);
-    a {
-      text-decoration:none;
-    }
+}
+.header-navigation {
+  @include center(780px);
+  @include min-screen(nth($res-collection, 4)*1px) {
+    @include uncenter();
   }
+}
+.header-story {
+  @extend %navigation;
+  @extend %small-screen-navigation;
+  width:150px;
+  @extend %nav-background;
+  background-position:0 -34px;
+  .nav-story {
+    position:absolute;
+    top:53px;
+    left:54px;
+  }
+}
+.header-shop {
+  @extend %navigation;
+  @extend %small-screen-navigation;
+  width:120px;
+  @extend %nav-background;
+  background-position:-150px -34px;
+  .nav-shop {
+    position:absolute;
+    top:70px;
+    left:65px;
+  }
+}
+.header-contact {
+  @extend %navigation;
+  @extend %small-screen-navigation;
+  width:114px;
+  @extend %nav-background;
+  background-position:-270px -34px;
+  .nav-contact {
+    position:absolute;
+    top:53px;
+    left:15px;
+  }
+}
+.header-cart {
+  @extend %navigation;
+  @extend %small-screen-navigation;
+  width:270px;
+  @extend %nav-background;
+  background-position:-385px -34px;
+  font-family:$font-family-secondary;
+  font-size:$h6;
+  text-transform:uppercase;
+  .nav-account {
+    position:absolute;
+    top:80px;
+    right:65px;
+  }
+  .nav-bag {
+    position:absolute;
+    top:93px;
+    right:65px;
+  }
+}
+.header-social {
+  position:absolute;
+  top:80px;
+  left:10px;
 }
