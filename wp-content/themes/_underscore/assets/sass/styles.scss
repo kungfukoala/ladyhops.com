@@ -27,7 +27,6 @@
 @import 'base/backgrounds';
 // LAYOUT
 @import 'layouts/default';
-@import 'layouts/store';
 // MODULES
 @import 'modules/header';
 @import 'modules/footer';
@@ -35,5 +34,6 @@
 @import 'modules/search';
 // PAGES
 @import 'pages/home';
+@import 'pages/store';
 // OH SHIT
 @import 'ohshit';

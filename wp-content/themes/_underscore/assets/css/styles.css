@@ -317,22 +317,22 @@ body {
   font-family: "Macarons W01"; }
 
 .h1, h1, h2, h3, h4, h5, h6, h1 {
-  font-size: 5em; }
+  font-size: 3em; }
 
 .h2, h2 {
-  font-size: 3em; }
+  font-size: 2em; }
 
 .h3, h3 {
   font-size: 2em; }
 
 .h4, h4 {
-  font-size: 1.3em; }
-
-.h5, h5 {
   font-size: 1em; }
 
-.h6, h6 {
+.h5, h5 {
   font-size: 0.7em; }
+
+.h6, h6 {
+  font-size: 0.4em; }
 
 p {
   line-height: 1.5em; }
@@ -341,10 +341,10 @@ a, a:visited {
   color: black; }
 
 a:active {
-  color: #c8c8c8; }
+  color: #e6e6e6; }
 
 a:hover {
-  color: #c8c8c8; }
+  color: #e6e6e6; }
 
 em, i, q {
   font-style: italic; }
@@ -356,7 +356,7 @@ strong, b {
   font-weight: 800; }
 
 small {
-  font-size: 0.7em;
+  font-size: 0.4em;
   line-height: 1em; }
 
 .header-story, .header-shop, .header-contact, .header-cart {
@@ -389,10 +389,8 @@ small {
   .container:after {
     clear: both; }
 
-.woocommerce .woocommerce-info {
-  border-top: 1px dotted black; }
-.woocommerce .woocommerce-info::before {
-  color: black; }
+.page-title {
+  margin-top: 0; }
 
 .header-story, .header-shop, .header-contact, .header-cart {
   position: relative;
@@ -479,7 +477,7 @@ small {
   width: 270px;
   background-position: -385px -34px;
   font-family: "Sofia Rough W00";
-  font-size: 0.7em;
+  font-size: 0.4em;
   text-transform: uppercase; }
   .header-cart .nav-account {
     position: absolute;
@@ -507,7 +505,7 @@ small {
       margin-right: 0%; }
     .footer .footer-left h3 {
       font-family: "Sofia Rough W00";
-      font-size: 1em; }
+      font-size: 0.7em; }
   .footer .footer-right {
     float: left;
     clear: none;
@@ -518,7 +516,7 @@ small {
       margin-right: 0%; }
   .footer .footer-made-in-oregon {
     font-family: "Sofia Rough W00";
-    font-size: 0.7em; }
+    font-size: 0.4em; }
 
 .copyright {
   border-top: 1px dotted; }
@@ -555,9 +553,49 @@ small {
   background-color: inherit; }
 
 button.search-submit:hover {
-  color: #c8c8c8;
-  border-color: #c8c8c8; }
+  color: #e6e6e6;
+  border-color: #e6e6e6; }
 
 .introduction {
   font-size: 2em;
   font-weight: 700; }
+
+.woocommerce .woocommerce-info {
+  border-top: 1px dotted black; }
+.woocommerce .woocommerce-info::before {
+  color: black; }
+.woocommerce .woocommerce-breadcrumb {
+  font-family: "Sofia Rough W00";
+  font-size: 0.4em; }
+.woocommerce .products ul, .woocommerce ul.products {
+  font-family: "Sofia Rough W00"; }
+  .woocommerce .products ul li.product h3, .woocommerce ul.products li.product h3 {
+    padding-left: 10px;
+    border-left: 4px solid #e6e6e6;
+    font-family: "Sofia Rough W00";
+    font-size: 1em; }
+  .woocommerce .products ul li.product, .woocommerce ul.products li.product {
+    float: left;
+    clear: none;
+    width: 48.5%;
+    margin-left: 0%;
+    margin-right: 3%;
+    float: left; }
+    .woocommerce .products ul li.product:nth-of-type(2n), .woocommerce ul.products li.product:nth-of-type(2n) {
+      margin-right: 0%;
+      float: right; }
+    .woocommerce .products ul li.product:nth-of-type(2n + 1), .woocommerce ul.products li.product:nth-of-type(2n + 1) {
+      clear: both; }
+    .woocommerce .products ul li.product .price, .woocommerce ul.products li.product .price {
+      padding-left: 10px;
+      border-left: 4px solid #e6e6e6;
+      border-top: 3px solid #e6e6e6;
+      border-bottom: 1px dotted #e6e6e6; }
+    .woocommerce .products ul li.product .button, .woocommerce ul.products li.product .button {
+      font-size: 0.4em; }
+.woocommerce span.onsale {
+  border: 2px solid #eb641e;
+  background-color: transparent;
+  font-family: "Sofia Rough W00";
+  font-size: 0.4em;
+  color: #eb641e; }

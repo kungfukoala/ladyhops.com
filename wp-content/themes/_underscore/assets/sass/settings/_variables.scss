@@ -14,12 +14,12 @@ $font-family-secondary:               "Sofia Rough W00";
 // Sizes
 $font-size:                           1em;
 
-$h1:                                  5em;
-$h2:                                  3em;
+$h1:                                  3em;
+$h2:                                  2em;
 $h3:                                  2em;
-$h4:                                  1.3em;
-$h5:                                  1.0em;
-$h6:                                  0.7em;
+$h4:                                  1.0em;
+$h5:                                  0.7em;
+$h6:                                  0.4em;
 // Weights
 $font-light:                          300;
 $font-medium:                         400;
@@ -51,8 +51,9 @@ $spacing-xsmall:                      $spacing-base/10;
 $black:                               rgb(0,0,0);
 $dark-grey:                           rgb(65,65,65);
 $grey:                                rgb(120,120,120);
-$light-grey:                          rgb(200,200,200);
+$light-grey:                          rgb(230,230,230);
 $yellow:                              yellow;
+$orange:                              rgb(235,100,30);
 
 $primary:                             $black;
 $secondary:                           white;
