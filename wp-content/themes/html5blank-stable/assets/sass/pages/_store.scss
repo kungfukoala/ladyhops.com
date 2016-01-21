@@ -1,0 +1,58 @@
+.hop-contract {
+  font-size:$h3;
+  font-weight:700;
+}
+.woocommerce {
+  .woocommerce-info {
+    border-top:1px dotted black;
+  }
+  .woocommerce-info::before {
+    color:black;
+  }
+  .woocommerce-breadcrumb {
+    font-family:$font-family-secondary;
+    font-size:$h6;
+  }
+  .product_title {
+    font-family:$font-family;
+    font-size:2em;
+  }
+  .amount {
+    font-family:$font-family-secondary;
+    font-size:$h5;
+    color:black;
+  }
+  .product-categories {
+    list-style:none;
+    padding-left:0;
+  }
+  .products ul, ul.products, {
+    font-family:$font-family-secondary;
+    li.product h3 {
+      padding-left:10px;
+      border-left:4px solid $light-grey;
+      font-family:$font-family-secondary;
+      font-size:$h4;
+    }
+    li.product {
+      @include col(1/2, $cycle:2);
+      float:left;
+      .price {
+        padding-left:10px;
+        border-left:4px solid $light-grey;
+        border-top:3px solid $light-grey;
+        border-bottom:1px dotted $light-grey;
+      }
+      .button {
+        font-size:$h6;
+      }
+    }
+  }
+  span.onsale {
+    border:2px solid $orange;
+    background-color:transparent;
+    font-family:$font-family-secondary;
+    font-size:$h6;
+    color:$orange;
+  }
+}

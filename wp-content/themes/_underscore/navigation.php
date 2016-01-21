@@ -7,10 +7,10 @@
         <div class="header-contact"><a class="nav-contact" href="<?php echo home_url(); ?>/contact">Contact</a></div>
         <div class="header-cart">
           <div class="header-social">
-            <a class="nav-facebook" href="<?php echo home_url(); ?>/shop">
+            <a class="nav-facebook" href="https://www.facebook.com/centraloregonladyhops">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/images/social-icon-facebook.png" width="25" height="25" alt="Find <?php bloginfo('name'); ?> on Facebook">
             </a>
-            <a class="nav-instagram" href="<?php echo home_url(); ?>/shop">
+            <a class="nav-instagram" href="http://instagram.com/ladyhopsfarm/">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/images/social-icon-instagram.png" width="25" height="25" alt="Find <?php bloginfo('name'); ?> on Instagram">
             </a>
           </div>

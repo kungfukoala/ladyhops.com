@@ -1331,13 +1331,11 @@ class WC_Admin_Post_Types {
 						break;
 				}
 
-				if ( ! empty( $new_price ) && $new_price != $old_sale_price ) {
+				if ( isset( $new_price ) && $new_price != $old_sale_price ) {
 					$price_changed = true;
-					$new_price = round( $new_price, wc_get_price_decimals() );
+					$new_price = ! empty( $new_price ) || '0' === $new_price ? round( $new_price, wc_get_price_decimals() ) : '';
 					update_post_meta( $post_id, '_sale_price', $new_price );
 					$product->sale_price = $new_price;
-				} else {
-					update_post_meta( $post_id, '_sale_price', '' );
 				}
 			}
 
@@ -2056,7 +2054,7 @@ class WC_Admin_Post_Types {
 	public function edit_form_after_title(  $post ) {
 		if ( 'shop_coupon' === $post->post_type ) {
 			?>
-			<textarea id="woocommerce-coupon-description" name="excerpt" cols="5" rows="2" placeholder="<?php esc_attr_e( 'Description (optional)', 'woocommerce' ); ?>"><?php echo esc_textarea( $post->post_excerpt ); ?></textarea>
+			<textarea id="woocommerce-coupon-description" name="excerpt" cols="5" rows="2" placeholder="<?php esc_attr_e( 'Description (optional)', 'woocommerce' ); ?>"><?php echo $post->post_excerpt; // This is already escaped in core ?></textarea>
 			<?php
 		}
 	}

@@ -12,7 +12,7 @@
 		<!-- /post thumbnail -->
 
 		<!-- post title -->
-		<h2>
+		<h2 class="title-page">
 			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 		</h2>
 		<!-- /post title -->

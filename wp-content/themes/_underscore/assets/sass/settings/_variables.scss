@@ -2,7 +2,7 @@
 //
 // MEDIA QUERIES
 //
-$res-collection:                      (320, 480, 768, 1024, 1280, 1680);
+$res-collection:                      (320, 568, 736, 1024, 1280, 1680);
 $orientation-collection:              (all, portrait, landscape);
 //
 //
@@ -13,12 +13,13 @@ $font-family:                         "Macarons W01";
 $font-family-secondary:               "Sofia Rough W00";
 // Sizes
 $font-size:                           1em;
+$font-size-smallscreens:              0.7em;
 
-$h1:                                  3em;
-$h2:                                  2em;
+$h1:                                  4em;
+$h2:                                  3em;
 $h3:                                  2em;
-$h4:                                  1.0em;
-$h5:                                  0.7em;
+$h4:                                  1.5em;
+$h5:                                  1em;
 $h6:                                  0.4em;
 // Weights
 $font-light:                          300;
@@ -50,10 +51,12 @@ $spacing-xsmall:                      $spacing-base/10;
 //
 $black:                               rgb(0,0,0);
 $dark-grey:                           rgb(65,65,65);
-$grey:                                rgb(120,120,120);
+$grey:                                rgb(160,160,160);
 $light-grey:                          rgb(230,230,230);
-$yellow:                              yellow;
+$yellow:                              rgb(250,250,240);
 $orange:                              rgb(235,100,30);
+$green:                               rgb(170,220,120);
+
 
 $primary:                             $black;
 $secondary:                           white;
@@ -62,7 +65,7 @@ $tertiary:                            $light-grey;
 $color:                               $primary;
 $color-background:                    white;
 // FORM COLORS
-$placeholder-color:                   $dark-grey;
+$placeholder-color:                   $light-grey;
 //
 //
 // ASSETS

@@ -1,0 +1,27 @@
+%aligndefault {
+  padding:0;
+  @include min-screen(nth($res-collection, 2)*1px) {
+    padding-top:0.3em;
+  }
+}
+.alignright {
+  @extend %aligndefault;
+  @include min-screen(nth($res-collection, 2)*1px) {
+    float:right;
+  }
+}
+.alignleft {
+  @extend %aligndefault;
+  padding-right:$spacing-medium;
+  @include min-screen(nth($res-collection, 2)*1px) {
+    float:left;
+  }
+}
+.aligncenter {
+  @extend %aligndefault;
+  padding-right:$spacing-medium;
+  @include min-screen(nth($res-collection, 2)*1px) {
+    display: block;
+    margin: 0 auto;
+  }
+}

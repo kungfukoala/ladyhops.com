@@ -1,0 +1,51 @@
+.footer {
+  margin-top:$spacing-large;
+  margin-bottom:$spacing-medium;
+  padding-left:15px;
+  padding-right:15px;
+  @include min-screen(nth($res-collection, 4)*1px) {
+    padding-left:0px;
+    padding-right:0px;
+  }
+}
+.footer-header {
+  @include column(3/3);
+  text-align:center;
+}
+.footer-copyright{
+  @include col(1/1);
+}
+%footer-columns {
+  @include column(1/1);
+  text-align:center;
+  @include min-screen(nth($res-collection, 2)*1px) {
+    @include column(1/2, $cycle: 2);
+  }
+}
+.footer-left {
+  @extend %footer-columns;
+  h3 {
+    margin:0;
+    font-family:$font-family-secondary;
+    font-size:$h5;
+  }
+  @include min-screen(nth($res-collection, 2)*1px) {
+    text-align:right;
+  }
+}
+.footer-right {
+  @extend %footer-columns;
+  @include min-screen(nth($res-collection, 2)*1px) {
+    text-align:left;
+  }
+}
+.footer-made-in-oregon {
+  font-family:$font-family-secondary;
+  font-size:$h6;
+}
+.copyright {
+  font-family:$font-family-secondary;
+  font-size:$h6;
+  color:$grey;
+  text-align:right;
+}

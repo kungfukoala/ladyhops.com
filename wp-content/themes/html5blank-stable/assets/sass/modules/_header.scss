@@ -1,0 +1,123 @@
+%navigation {
+  position:relative;
+  height:120px;
+  float:left;
+  font-family:$font-family-secondary;
+  font-size:15px;
+  padding-top:15px;
+  @include min-screen(nth($res-collection, 4)*1px) {
+    float:left;
+    text-align:left;
+    height:145px;
+  }
+}
+%small-screen-navigation {
+  margin-top:10px;
+  @include min-screen(nth($res-collection, 4)*1px) {
+    margin-top:0px;
+  }
+}
+.header {
+  @include center(820px);
+  margin-bottom:$spacing-medium;
+  padding-left:15px;
+  padding-right:15px;
+  a {
+    text-decoration:none;
+  }
+  @include min-screen(nth($res-collection, 4)*1px) {
+    padding-left:0px;
+    padding-right:0px;
+  }
+}
+.header-logo {
+  float:left;
+  @include screen(nth($res-collection, 3)*1px, nth($res-collection, 4)*1px) {
+    float:none;
+    text-align:center;
+    padding-left:10px;
+    clear:both;
+  }
+  @include min-screen(nth($res-collection, 4)*1px) {
+    float:left;
+    text-align:left;
+  }
+}
+.header-navigation {
+  @include center(780px);
+  @include min-screen(nth($res-collection, 4)*1px) {
+    @include uncenter();
+  }
+}
+.header-story {
+  @extend %navigation;
+  @extend %small-screen-navigation;
+  width:150px;
+  @extend %nav-background;
+  background-position:0 -34px;
+  .nav-story {
+    position:absolute;
+    top:53px;
+    left:54px;
+  }
+}
+.header-shop {
+  @extend %navigation;
+  @extend %small-screen-navigation;
+  width:120px;
+  @extend %nav-background;
+  background-position:-150px -34px;
+  .nav-shop {
+    position:absolute;
+    top:70px;
+    left:65px;
+  }
+}
+.header-contact {
+  @extend %navigation;
+  @extend %small-screen-navigation;
+  width:114px;
+  @extend %nav-background;
+  background-position:-270px -34px;
+  .nav-contact {
+    position:absolute;
+    top:53px;
+    left:15px;
+  }
+}
+.header-cart {
+  @extend %navigation;
+  @extend %small-screen-navigation;
+  width:270px;
+  @extend %nav-background;
+  background-position:-385px -34px;
+  font-family:$font-family-secondary;
+  font-size:$h6;
+  text-transform:uppercase;
+  .nav-account {
+    position:absolute;
+    top:80px;
+    right:65px;
+  }
+  .nav-bag {
+    position:absolute;
+    top:93px;
+    right:65px;
+  }
+  @include screen(nth($res-collection, 3)*1px, nth($res-collection, 4)*1px) {
+    width:250px;
+    background-position:-395px -34px;
+  }
+  @include min-screen(nth($res-collection, 4)*1px) {
+    width:270px;
+    background-position:-385px -34px;
+  }
+}
+.header-social {
+  display:none;
+  @include min-screen(nth($res-collection, 4)*1px) {
+    position:absolute;
+    top:80px;
+    left:10px;
+  }
+}

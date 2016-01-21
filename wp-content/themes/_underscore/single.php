@@ -18,7 +18,7 @@
 			<!-- /post thumbnail -->
 
 			<!-- post title -->
-			<h1>
+			<h1 class="title-page">
 				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 			</h1>
 			<!-- /post title -->
@@ -62,7 +62,6 @@
 	<!-- /section -->
 	</main>
 
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
 </div>

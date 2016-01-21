@@ -18,7 +18,7 @@
 }
 .header {
   @include center(820px);
-  margin-bottom:$spacing-large;
+  margin-bottom:$spacing-medium;
   a {
     text-decoration:none;
   }

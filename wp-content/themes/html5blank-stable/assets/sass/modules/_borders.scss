@@ -1,0 +1,16 @@
+.border-horizontal {
+  width:100%;
+  clear:both;
+  @extend %img-border-horizontal;
+  height:20px;
+}
+.border-vertical {
+  @extend %img-border-vertical;
+  width:100%;
+  height:7px;
+}
+.border-dash-vertical {
+  @extend %img-border-dash-vertical;
+  width:100%;
+  height:7px;
+}

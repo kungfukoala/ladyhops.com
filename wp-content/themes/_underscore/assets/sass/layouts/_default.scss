@@ -7,3 +7,6 @@
 .page-title {
   margin-top:0;
 }
+article {
+  @include cf();
+}

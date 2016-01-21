@@ -9,6 +9,19 @@
     font-family:$font-family-secondary;
     font-size:$h6;
   }
+  .product_title {
+    font-family:$font-family;
+    font-size:2em;
+  }
+  .amount {
+    font-family:$font-family-secondary;
+    font-size:$h5;
+    color:black;
+  }
+  .product-categories {
+    list-style:none;
+    padding-left:0;
+  }
   .products ul, ul.products, {
     font-family:$font-family-secondary;
     li.product h3 {

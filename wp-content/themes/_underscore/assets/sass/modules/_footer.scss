@@ -1,20 +1,45 @@
 .footer {
   margin-top:$spacing-large;
-  .footer-left {
-    @include column(1/3);
-    h3 {
-      font-family:$font-family-secondary;
-      font-size:$h5;
-    }
-  }
-  .footer-right {
-    @include column(2/3);
-  }
-  .footer-made-in-oregon {
-    font-family:$font-family-secondary;
-    font-size:$h6;
+  margin-bottom:$spacing-medium;
+}
+.footer-header {
+  @include column(3/3);
+  text-align:center;
+}
+.footer-copyright{
+  @include col(1/1);
+}
+%footer-columns {
+  @include column(1/1);
+  text-align:center;
+  @include min-screen(nth($res-collection, 2)*1px) {
+    @include column(1/2, $cycle: 2);
   }
 }
+.footer-left {
+  @extend %footer-columns;
+  h3 {
+    margin:0;
+    font-family:$font-family-secondary;
+    font-size:$h5;
+  }
+  @include min-screen(nth($res-collection, 2)*1px) {
+    text-align:right;
+  }
+}
+.footer-right {
+  @extend %footer-columns;
+  @include min-screen(nth($res-collection, 2)*1px) {
+    text-align:left;
+  }
+}
+.footer-made-in-oregon {
+  font-family:$font-family-secondary;
+  font-size:$h6;
+}
 .copyright {
-  border-top:1px dotted;
+  font-family:$font-family-secondary;
+  font-size:$h6;
+  color:$grey;
+  text-align:right;
 }

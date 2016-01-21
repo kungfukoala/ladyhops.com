@@ -4,6 +4,22 @@
  *  Custom functions, support, custom post types and more.
  */
 
+ /*------------------------------------*\
+ 	WooCommerce
+ \*------------------------------------*/
+ remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+ remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+
+ add_action('woocommerce_before_main_content', 'my_theme_wrapper_start', 10);
+add_action('woocommerce_after_main_content', 'my_theme_wrapper_end', 10);
+
+function my_theme_wrapper_start() {
+  echo '<section id="main">';
+}
+
+function my_theme_wrapper_end() {
+  echo '</section>';
+}
 /*------------------------------------*\
 	External Modules/Files
 \*------------------------------------*/
@@ -68,13 +84,10 @@ function underscore_header_scripts()
 
         wp_register_script('modernizr', get_template_directory_uri() . '/assets/javascript/vendor/modernizr-2.8.3.min.js', array(), '2.8.3'); // Modernizr
         wp_enqueue_script('modernizr'); // Enqueue it!
-        
+
         wp_register_script('jquery', get_template_directory_uri() . '/assets/javascript/vendor/jquery-1.11.2.min.js', array(), '1.11.2'); // JQuery
         wp_enqueue_script('jquery'); // Enqueue it!
 
-        wp_register_script('lettering', get_template_directory_uri() . '/assets/javascript/vendor/jquery.lettering.js', array(), '0.7.0'); // Lettering
-        wp_enqueue_script('lettering'); // Enqueue it!
-        
         wp_register_script('underscorescripts', get_template_directory_uri() . '/assets/javascript/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('underscorescripts'); // Enqueue it!
     }
@@ -324,7 +337,7 @@ add_action('wp_print_scripts', 'underscore_conditional_scripts'); // Add Conditi
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'underscore_styles'); // Add Theme Stylesheet
 add_action('init', 'register_underscore_menu'); // Add HTML5 Blank Menu
-add_action('init', 'create_post_type_underscore'); // Add our HTML5 Blank Custom Post Type
+// add_action('init', 'create_post_type_underscore'); // Add our HTML5 Blank Custom Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'underscorewp_pagination'); // Add our HTML5 Pagination
 

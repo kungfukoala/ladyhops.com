@@ -1,0 +1,73 @@
+//
+//
+// MEDIA QUERIES
+//
+$res-collection:                      (320, 480, 640, 1024, 1280, 1680);
+$orientation-collection:              (all, portrait, landscape);
+//
+//
+// TYPOGRAPHY
+//
+// Families
+$font-family:                         "Macarons W01";
+$font-family-secondary:               "Sofia Rough W00";
+// Sizes
+$font-size:                           1em;
+$font-size-smallscreens:              0.7em;
+
+$h1:                                  4em;
+$h2:                                  3em;
+$h3:                                  2em;
+$h4:                                  1.5em;
+$h5:                                  1em;
+$h6:                                  0.4em;
+// Weights
+$font-light:                          300;
+$font-medium:                         400;
+$font-bold:                           600;
+$font-heavy:                          700;
+// Line Height
+$line-height:                         1.5em; // 1.5em default
+$line-height-small:                   $line-height/2;
+$line-height-medium:                  $line-height*2;
+$line-height-large:                   $line-height*4;
+// Letter Spacing
+$letter-spacing:                      0.1em;
+$letter-spacing-medium:               $letter-spacing*2;
+$letter-spacing-large:                $letter-spacing*3;
+//
+//
+// SPACING
+//
+$spacing-base:                        2em;
+$spacing-xlarge:                      $spacing-base*3;
+$spacing-large:                       $spacing-base*2;
+$spacing-medium:                      $spacing-base/2;
+$spacing-small:                       $spacing-base/4;
+$spacing-xsmall:                      $spacing-base/10;
+//
+//
+// COLORS
+//
+$black:                               rgb(0,0,0);
+$dark-grey:                           rgb(65,65,65);
+$grey:                                rgb(160,160,160);
+$light-grey:                          rgb(230,230,230);
+$yellow:                              rgb(250,250,240);
+$orange:                              rgb(235,100,30);
+$green:                               rgb(170,220,120);
+
+
+$primary:                             $black;
+$secondary:                           white;
+$tertiary:                            $light-grey;
+
+$color:                               $primary;
+$color-background:                    white;
+// FORM COLORS
+$placeholder-color:                   $light-grey;
+//
+//
+// ASSETS
+//
+$img-assetpath:                       "/wp-content/themes/html5blank-stable/assets/images/";

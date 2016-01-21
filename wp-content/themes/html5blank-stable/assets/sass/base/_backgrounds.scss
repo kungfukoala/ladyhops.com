@@ -1,0 +1,26 @@
+// Background Assets
+$nav-background: "navigation1.3.png";
+$img-border-horizonal: "border-horizontal.png";
+$img-border-vertical: "border-vertical.png";
+$img-border-vertical-dash: "border-dash-vertical.png";
+$img-hr: "border-top.png";
+$img-home-background: "home1.3.png";
+// Background Code
+%nav-background {
+  background:url(#{$img-assetpath}#{$nav-background}) no-repeat;
+}
+%img-border-horizontal {
+  background:url(#{$img-assetpath}#{$img-border-horizonal}) no-repeat;
+}
+%img-border-vertical {
+  background:url(#{$img-assetpath}#{$img-border-vertical}) no-repeat;
+}
+%img-border-dash-vertical {
+  background:url(#{$img-assetpath}#{$img-border-vertical-dash}) no-repeat;
+}
+%hr-background {
+  background:url(#{$img-assetpath}#{$img-hr}) no-repeat;
+}
+%home-background {
+  background:url(#{$img-assetpath}#{$img-home-background}) center -95px no-repeat;
+}

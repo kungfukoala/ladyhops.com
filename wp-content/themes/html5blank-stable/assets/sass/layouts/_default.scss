@@ -1,0 +1,12 @@
+.wrapper {
+  @include center(820px);
+}
+.container {
+  @include cf();
+}
+.page-title {
+  margin-top:0;
+}
+article {
+  @include cf();
+}

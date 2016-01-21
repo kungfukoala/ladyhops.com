@@ -290,18 +290,18 @@ img {
   -ms-interpolation-mode: bicubic; }
 
 ::-webkit-input-placeholder {
-  color: #414141; }
+  color: #e6e6e6; }
 
 :-moz-placeholder {
-  color: #414141;
+  color: #e6e6e6;
   opacity: 1; }
 
 ::-moz-placeholder {
-  color: #414141;
+  color: #e6e6e6;
   opacity: 1; }
 
 :-ms-input-placeholder {
-  color: #414141; }
+  color: #e6e6e6; }
 
 body {
   -webkit-font-feature-settings: "kern", "liga", "pnum";
@@ -311,31 +311,38 @@ body {
   -webkit-font-smoothing: antialiased;
   color: black;
   font-family: "Macarons W01";
-  font-size: 1em; }
+  font-size: 0.7em; }
+  @media screen and (min-width: 568px) {
+    body {
+      font-size: 1em; } }
 
 .h1, h1, h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Macarons W01"; }
+  font-family: "Sofia Rough W00"; }
 
 .h1, h1, h2, h3, h4, h5, h6, h1 {
-  font-size: 3em; }
+  font-size: 4em; }
 
 .h2, h2 {
-  font-size: 2em; }
+  font-size: 3em; }
 
 .h3, h3 {
   font-size: 2em; }
 
 .h4, h4 {
-  font-size: 1em; }
+  font-size: 1.5em; }
 
 .h5, h5 {
-  font-size: 0.7em; }
+  font-size: 1em; }
 
 .h6, h6 {
   font-size: 0.4em; }
 
 p {
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  text-align: center; }
+  @media screen and (min-width: 568px) {
+    p {
+      text-align: left; } }
 
 a, a:visited {
   color: black; }
@@ -360,7 +367,7 @@ small {
   line-height: 1em; }
 
 .header-story, .header-shop, .header-contact, .header-cart {
-  background: url(/wp-content/themes/_underscore/assets/images/navigation1.2.png) no-repeat; }
+  background: url(/wp-content/themes/_underscore/assets/images/navigation1.3.png) no-repeat; }
 
 .border-horizontal {
   background: url(/wp-content/themes/_underscore/assets/images/border-horizontal.png) no-repeat; }
@@ -370,6 +377,18 @@ small {
 
 .border-dash-vertical {
   background: url(/wp-content/themes/_underscore/assets/images/border-dash-vertical.png) no-repeat; }
+
+.hr {
+  background: url(/wp-content/themes/_underscore/assets/images/border-top.png) no-repeat; }
+
+.home {
+  background: url(/wp-content/themes/_underscore/assets/images/home1.3.png) center 310px no-repeat; }
+  @media screen and (min-width: 568px) and (max-width: 1024px) {
+    .home {
+      background: url(/wp-content/themes/_underscore/assets/images/home1.3.png) center 200px no-repeat; } }
+  @media screen and (min-width: 1024px) {
+    .home {
+      background: url(/wp-content/themes/_underscore/assets/images/home1.3.png) center 45px no-repeat; } }
 
 .main-container {
   width: auto;
@@ -391,6 +410,14 @@ small {
 
 .page-title {
   margin-top: 0; }
+
+article {
+  *zoom: 1; }
+  article:before, article:after {
+    content: '';
+    display: table; }
+  article:after {
+    clear: both; }
 
 .header-story, .header-shop, .header-contact, .header-cart {
   position: relative;
@@ -419,7 +446,7 @@ small {
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
-  margin-bottom: 4em; }
+  margin-bottom: 1em; }
   .header a {
     text-decoration: none; }
 
@@ -494,32 +521,71 @@ small {
   left: 10px; }
 
 .footer {
-  margin-top: 4em; }
-  .footer .footer-left {
-    float: left;
-    clear: none;
-    width: 31.3333333333%;
-    margin-left: 0%;
-    margin-right: 3%; }
-    .footer .footer-left:last-child {
-      margin-right: 0%; }
-    .footer .footer-left h3 {
-      font-family: "Sofia Rough W00";
-      font-size: 0.7em; }
-  .footer .footer-right {
-    float: left;
-    clear: none;
-    width: 65.6666666667%;
-    margin-left: 0%;
-    margin-right: 3%; }
-    .footer .footer-right:last-child {
-      margin-right: 0%; }
-  .footer .footer-made-in-oregon {
-    font-family: "Sofia Rough W00";
-    font-size: 0.4em; }
+  margin-top: 4em;
+  margin-bottom: 1em; }
+
+.footer-header {
+  float: left;
+  clear: none;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%;
+  text-align: center; }
+  .footer-header:last-child {
+    margin-right: 0%; }
+
+.footer-copyright {
+  float: left;
+  clear: none;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%; }
+  .footer-copyright:last-child {
+    margin-right: 0%; }
+
+.footer-left, .footer-right {
+  float: left;
+  clear: none;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%;
+  text-align: center; }
+  .footer-left:last-child, .footer-right:last-child {
+    margin-right: 0%; }
+  @media screen and (min-width: 568px) {
+    .footer-left, .footer-right {
+      float: left;
+      clear: none;
+      width: 48.5%;
+      margin-left: 0%;
+      margin-right: 3%; }
+      .footer-left:nth-of-type(2n), .footer-right:nth-of-type(2n) {
+        margin-right: 0%;
+        float: right; }
+      .footer-left:nth-of-type(2n + 1), .footer-right:nth-of-type(2n + 1) {
+        clear: both; } }
+
+.footer-left h3 {
+  margin: 0;
+  font-family: "Sofia Rough W00";
+  font-size: 1em; }
+@media screen and (min-width: 568px) {
+  .footer-left {
+    text-align: right; } }
+
+@media screen and (min-width: 568px) {
+  .footer-right {
+    text-align: left; } }
+
+.footer-made-in-oregon {
+  font-family: "Sofia Rough W00";
+  font-size: 0.4em; }
 
 .copyright {
-  border-top: 1px dotted; }
+  font-family: "Sofia Rough W00";
+  font-size: 0.4em;
+  color: #a0a0a0;
+  text-align: right; }
 
 .border-horizontal {
   width: 100%;
@@ -538,25 +604,55 @@ small {
   font-family: "Sofia Rough W00";
   font-size: 12px;
   border: none;
-  border-bottom: 5px solid black; }
+  border-bottom: 1px dotted #a0a0a0; }
 
 .search-input {
-  padding-top: 10px;
+  margin-top: 10px;
   padding-bottom: 5px;
-  margin-top: 4em;
   margin-bottom: 4em;
-  width: 250px; }
+  width: 75%; }
 
 .search-submit {
-  padding-top: 10px;
+  margin-top: 10px;
+  padding-top: 5px;
   padding-bottom: 5px;
-  background-color: inherit; }
+  background-color: inherit;
+  border: 2px solid #a0a0a0;
+  color: #a0a0a0; }
 
 button.search-submit:hover {
   color: #e6e6e6;
   border-color: #e6e6e6; }
 
+.alignright, .alignleft, .aligncenter {
+  padding: 0; }
+  @media screen and (min-width: 568px) {
+    .alignright, .alignleft, .aligncenter {
+      padding-top: 0.3em; } }
+
+@media screen and (min-width: 568px) {
+  .alignright {
+    float: right; } }
+
+.alignleft {
+  padding-right: 1em; }
+  @media screen and (min-width: 568px) {
+    .alignleft {
+      float: left; } }
+
+.aligncenter {
+  padding-right: 1em; }
+  @media screen and (min-width: 568px) {
+    .aligncenter {
+      display: block;
+      margin: 0 auto; } }
+
 .introduction {
+  margin-top: 385px;
+  font-size: 2em;
+  font-weight: 700; }
+
+.story {
   font-size: 2em;
   font-weight: 700; }
 
@@ -567,13 +663,23 @@ button.search-submit:hover {
 .woocommerce .woocommerce-breadcrumb {
   font-family: "Sofia Rough W00";
   font-size: 0.4em; }
+.woocommerce .product_title {
+  font-family: "Macarons W01";
+  font-size: 2em; }
+.woocommerce .amount {
+  font-family: "Sofia Rough W00";
+  font-size: 1em;
+  color: black; }
+.woocommerce .product-categories {
+  list-style: none;
+  padding-left: 0; }
 .woocommerce .products ul, .woocommerce ul.products {
   font-family: "Sofia Rough W00"; }
   .woocommerce .products ul li.product h3, .woocommerce ul.products li.product h3 {
     padding-left: 10px;
     border-left: 4px solid #e6e6e6;
     font-family: "Sofia Rough W00";
-    font-size: 1em; }
+    font-size: 1.5em; }
   .woocommerce .products ul li.product, .woocommerce ul.products li.product {
     float: left;
     clear: none;
@@ -599,3 +705,32 @@ button.search-submit:hover {
   font-family: "Sofia Rough W00";
   font-size: 0.4em;
   color: #eb641e; }
+
+.story-header {
+  position: relative;
+  float: left;
+  clear: none;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%; }
+  .story-header:last-child {
+    margin-right: 0%; }
+  .story-header-image {
+    position: absolute;
+    z-index: 1; }
+  .story-header-text {
+    position: absolute;
+    bottom: 0px;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    color: white; }
+
+.hr {
+  width: 100%;
+  height: 15px; }
+
+.title-page {
+  margin-bottom: 0.1em;
+  color: #a0a0a0;
+  font-size: 1.5em; }
