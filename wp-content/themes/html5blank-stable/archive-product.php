@@ -28,7 +28,6 @@ get_header( 'shop' ); ?>
 		<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 
 			<h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
-      <p class="hop-contract">For hop contract please <a href="/contact">click here</a>.</p>
 
 		<?php endif; ?>
 

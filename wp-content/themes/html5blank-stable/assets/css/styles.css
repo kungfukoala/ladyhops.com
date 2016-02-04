@@ -366,6 +366,11 @@ small {
   font-size: 0.4em;
   line-height: 1em; }
 
+.caption {
+  font-size: 0.5em;
+  font-style: italic;
+  color: #a0a0a0; }
+
 .header-story, .header-shop, .header-contact, .header-cart {
   background: url(/wp-content/themes/html5blank-stable/assets/images/navigation1.3.png) no-repeat; }
 
@@ -515,6 +520,11 @@ article {
     position: absolute;
     top: 80px;
     right: 65px; }
+  .header-cart .nav-cart-contents {
+    position: absolute;
+    top: 84px;
+    right: 14px;
+    font-size: 12px; }
   .header-cart .nav-bag {
     position: absolute;
     top: 93px;
@@ -556,6 +566,10 @@ article {
   .footer-header:last-child {
     margin-right: 0%; }
 
+.footer-product {
+  list-style-type: none;
+  text-align: left; }
+
 .footer-copyright {
   float: left;
   clear: none;
@@ -595,13 +609,19 @@ article {
   .footer-left {
     text-align: right; } }
 
+.footer-right h3 {
+  margin: 0;
+  font-family: "Sofia Rough W00";
+  font-size: 1em; }
 @media screen and (min-width: 480px) {
   .footer-right {
     text-align: left; } }
 
 .footer-made-in-oregon {
   font-family: "Sofia Rough W00";
-  font-size: 0.4em; }
+  font-size: 0.4em;
+  margin-top: 35px;
+  margin-bottom: 35px; }
 
 .copyright {
   font-family: "Sofia Rough W00";

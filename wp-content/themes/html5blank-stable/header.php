@@ -52,7 +52,7 @@
 		          <a class="nav-account" href="<?php echo home_url(); ?>/my-account">My Account</a>
 		          <a class="nav-bag" href="<?php echo home_url(); ?>/cart">Bag</a>
 							<a class="nav-cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
-								<?php echo sprintf (_n( '%d <br>item', ' %d <br>items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?>
+								<?php echo sprintf (_n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?>
 							</a>
 						</div>
 		      </div>

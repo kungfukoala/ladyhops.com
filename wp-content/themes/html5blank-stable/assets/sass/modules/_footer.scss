@@ -12,6 +12,10 @@
   @include column(3/3);
   text-align:center;
 }
+.footer-product {
+  list-style-type:none;
+  text-align:left;
+}
 .footer-copyright{
   @include col(1/1);
 }
@@ -35,6 +39,11 @@
 }
 .footer-right {
   @extend %footer-columns;
+  h3 {
+    margin:0;
+    font-family:$font-family-secondary;
+    font-size:$h5;
+  }
   @include min-screen(nth($res-collection, 2)*1px) {
     text-align:left;
   }
@@ -42,6 +51,8 @@
 .footer-made-in-oregon {
   font-family:$font-family-secondary;
   font-size:$h6;
+  margin-top:35px;
+  margin-bottom:35px;
 }
 .copyright {
   font-family:$font-family-secondary;
