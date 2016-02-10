@@ -10,6 +10,8 @@ body {
 }
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family:$font-family-secondary;
+  line-height:$line-height-small;
+  font-weight:100;
 }
 h1, h2, h3, h4, h5, h6 {
   @extend .h1;
@@ -68,7 +70,7 @@ small {
   line-height:1em;
 }
 .caption {
-  font-size:0.5em;
+  font-size:$h6;
   font-style:italic;
-  color:$grey;
+  color:$dark-grey;
 }

@@ -9,7 +9,27 @@
 	External Modules/Files
 \*------------------------------------*/
 
-// Load any external files you have here
+/** Remove short description if product tabs are not displayed */
+
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
+
+/** Display product description the_content */
+function tf_do_product_desc() {
+	global $woocommerce, $post;
+
+	if ( $post->post_content ) : ?>
+		<div itemprop="description">
+
+			<?php $heading = apply_filters('woocommerce_product_description_heading', __('Product Description', 'woocommerce')); ?>
+
+			<!-- <h2><?php echo $heading; ?></h2> -->
+
+			<?php the_content(); ?>
+
+		</div>
+	<?php endif;
+}
+add_action( 'woocommerce_single_product_summary', 'tf_do_product_desc', 30 );
 
 /*------------------------------------*\
 	Theme Support

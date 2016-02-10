@@ -10,24 +10,7 @@
 		</div>
 		<div class="container">
 			<div class="footer-left">
-				<ul class="footer-product">
-					<?php
-						$args = array(
-							'post_type' => 'product',
-							'posts_per_page' => 1,
-							'orderby' => 'rand'
-						);
-						$loop = new WP_Query( $args );
-						if ( $loop->have_posts() ) {
-							while ( $loop->have_posts() ) : $loop->the_post();
-							wc_get_template_part( 'content', 'product' );
-							endwhile;
-							} else {
-									 echo __( 'No products found' );
-						}
-						wp_reset_postdata();
-					?>
-				</ul>
+
 			</div>
 			<div class="footer-right">
 				<div class="footer-made-in-oregon">
@@ -37,29 +20,12 @@
 						Central Oregon Hop Growers Association<br>
 						Pink Boot Society</p>
 				</div>
-				<ul class="footer-product">
-					<?php
-						$args = array(
-							'post_type' => 'product',
-							'posts_per_page' => 1,
-							'orderby' => 'rand'
-						);
-						$loop = new WP_Query( $args );
-						if ( $loop->have_posts() ) {
-							while ( $loop->have_posts() ) : $loop->the_post();
-							wc_get_template_part( 'content', 'product' );
-							endwhile;
-							} else {
-									 echo __( 'No products found' );
-						}
-						wp_reset_postdata();
-					?>
-				</ul>
+
 			</div>
 		</div>
 		<div class="footer-copyright">
 		<div class="hr"></div>
-		<p class="copyright">&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>.</p>
+		<p class="copyright">&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <a href="<?php echo home_url(); ?>/terms-and-conditions">Terms and Conditions</a></p>
 	</div>
 	</div>
 </footer>

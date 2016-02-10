@@ -314,10 +314,12 @@ body {
   font-size: 0.7em; }
   @media screen and (min-width: 480px) {
     body {
-      font-size: 1em; } }
+      font-size: 1.2em; } }
 
 .h1, h1, h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Sofia Rough W00"; }
+  font-family: "Sofia Rough W00";
+  line-height: 0.75em;
+  font-weight: 100; }
 
 .h1, h1, h2, h3, h4, h5, h6, h1 {
   font-size: 4em; }
@@ -335,7 +337,7 @@ body {
   font-size: 1em; }
 
 .h6, h6 {
-  font-size: 0.4em; }
+  font-size: 0.6em; }
 
 p {
   line-height: 1.5em;
@@ -363,13 +365,13 @@ strong, b {
   font-weight: 800; }
 
 small {
-  font-size: 0.4em;
+  font-size: 0.6em;
   line-height: 1em; }
 
 .caption {
-  font-size: 0.5em;
+  font-size: 0.6em;
   font-style: italic;
-  color: #a0a0a0; }
+  color: #414141; }
 
 .header-story, .header-shop, .header-contact, .header-cart {
   background: url(/wp-content/themes/html5blank-stable/assets/images/navigation1.3.png) no-repeat; }
@@ -514,7 +516,7 @@ article {
   width: 270px;
   background-position: -385px -34px;
   font-family: "Sofia Rough W00";
-  font-size: 0.4em;
+  font-size: 0.6em;
   text-transform: uppercase; }
   .header-cart .nav-account {
     position: absolute;
@@ -619,13 +621,13 @@ article {
 
 .footer-made-in-oregon {
   font-family: "Sofia Rough W00";
-  font-size: 0.4em;
+  font-size: 0.6em;
   margin-top: 35px;
   margin-bottom: 35px; }
 
 .copyright {
   font-family: "Sofia Rough W00";
-  font-size: 0.4em;
+  font-size: 0.6em;
   color: #a0a0a0;
   text-align: right; }
 
@@ -692,6 +694,7 @@ button.search-submit:hover {
       margin: 0 auto; } }
 
 .introduction {
+  margin-top: 35px;
   font-size: 2em;
   font-weight: 700; }
   .introduction p {
@@ -704,11 +707,7 @@ button.search-submit:hover {
   height: 435px; }
 
 .story article {
-  font-size: 2em;
-  font-weight: 700; }
-
-.hop-contract {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 700; }
 
 .woocommerce .woocommerce-info {
@@ -717,7 +716,7 @@ button.search-submit:hover {
   color: black; }
 .woocommerce .woocommerce-breadcrumb {
   font-family: "Sofia Rough W00";
-  font-size: 0.4em; }
+  font-size: 0.6em; }
 .woocommerce .product_title {
   font-family: "Macarons W01";
   font-size: 2em; }
@@ -753,13 +752,29 @@ button.search-submit:hover {
       border-top: 3px solid #e6e6e6;
       border-bottom: 1px dotted #e6e6e6; }
     .woocommerce .products ul li.product .button, .woocommerce ul.products li.product .button {
-      font-size: 0.4em; }
+      font-size: 0.6em; }
 .woocommerce span.onsale {
   border: 2px solid #eb641e;
   background-color: transparent;
   font-family: "Sofia Rough W00";
-  font-size: 0.4em;
+  font-size: 0.6em;
   color: #eb641e; }
+
+.related {
+  clear: both;
+  border-top: 2px solid #a0a0a0; }
+  .related h2 {
+    font-size: 1em;
+    color: #a0a0a0; }
+
+.contact-form, .post-10 {
+  float: left;
+  clear: none;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%; }
+  .contact-form:last-child, .post-10:last-child {
+    margin-right: 0%; }
 
 .story-header {
   position: relative;

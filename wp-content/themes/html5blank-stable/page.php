@@ -13,8 +13,6 @@
 
 				<?php the_content(); ?>
 
-				<?php comments_template( '', true ); // Remove if you don't want comments ?>
-
 				<br class="clear">
 
 				<?php edit_post_link(); ?>
@@ -36,6 +34,11 @@
 
 		<?php endif; ?>
 
+		<?php if(get_field('contact_field')): ?>
+		<div class="contact-form">
+			<?php the_field('contact_field'); ?>
+		</div>
+		<?php endif; ?>
 		</section>
 		<!-- /section -->
 	</main>
